@@ -3,7 +3,7 @@
     "EXCLUDE_SECRETS" : true,
     "APPLICATIONS" : {
         "INCLUDE_ONLY" : ["Photo Editor"],
-        "EXCLUDE" : ["Console", "Dev-mgt-SP", "My Account"],
+        "EXCLUDE" : ["Console", "Prod-mgt-SP", "My Account"],
         "EXCLUDE_SECRETS" : false
     },
     "IDENTITY_PROVIDERS" : {
