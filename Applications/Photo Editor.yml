@@ -11,7 +11,7 @@ claimConfig:
   roleClaimURI: ""
   spClaimDialects: []
   userClaimURI: null
-description: A photo editor application in DEV
+description: A photo editor application in {{ENV}}
 discoverable: false
 imageUrl: ""
 inboundAuthenticationConfig:
@@ -35,7 +35,7 @@ inboundAuthenticationConfig:
       audiences: []
       backChannelLogoutUrl: null
       bypassClientCredentials: false
-      callbackUrl: http://localhost.com:8080/pickup-dispatch/oauth2client
+      callbackUrl: https://{{CALLBACK_DOMAIN}}/callback
       frontchannelLogoutUrl: null
       grantTypes: 'refresh_token urn:ietf:params:oauth:grant-type:saml2-bearer implicit
         password client_credentials iwa:ntlm urn:ietf:params:oauth:grant-type:device_code
@@ -45,7 +45,7 @@ inboundAuthenticationConfig:
       idTokenEncryptionMethod: "null"
       idTokenExpiryTime: 3600
       oauthConsumerKey: Z2vfNZyJuOAZghvzB41USDIk8Sca
-      oauthConsumerSecret: '********'
+      oauthConsumerSecret: '{{MY_SECRET}}'
       oauthVersion: OAuth-2.0
       pkceMandatory: false
       pkceSupportPlain: true
