@@ -1,0 +1,252 @@
+!!org.wso2.carbon.identity.rest.api.server.claim.management.v1.model.ClaimDialectConfiguration
+claims:
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:photos.thumbnail
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG90b3MudGh1bWJuYWls
+  mappedLocalClaimURI: http://wso2.org/claims/thumbnail
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:title
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDp0aXRsZQ
+  mappedLocalClaimURI: http://wso2.org/claims/title
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:userType
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDp1c2VyVHlwZQ
+  mappedLocalClaimURI: http://wso2.org/claims/userType
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:active
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphY3RpdmU
+  mappedLocalClaimURI: http://wso2.org/claims/active
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.pager
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMucGFnZXI
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.pager
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.streetAddress
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMuc3RyZWV0QWRkcmVzcw
+  mappedLocalClaimURI: http://wso2.org/claims/streetaddress
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.honorificSuffix
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLmhvbm9yaWZpY1N1ZmZpeA
+  mappedLocalClaimURI: http://wso2.org/claims/honorificSuffix
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:id
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDppZA
+  mappedLocalClaimURI: http://wso2.org/claims/userid
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:photos
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG90b3M
+  mappedLocalClaimURI: http://wso2.org/claims/photos
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:meta.lastModified
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDptZXRhLmxhc3RNb2RpZmllZA
+  mappedLocalClaimURI: http://wso2.org/claims/modified
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.honorificPrefix
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLmhvbm9yaWZpY1ByZWZpeA
+  mappedLocalClaimURI: http://wso2.org/claims/honorificPrefix
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.locality
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMubG9jYWxpdHk
+  mappedLocalClaimURI: http://wso2.org/claims/addresses.locality
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:groups
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpncm91cHM
+  mappedLocalClaimURI: http://wso2.org/claims/groups
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.middleName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLm1pZGRsZU5hbWU
+  mappedLocalClaimURI: http://wso2.org/claims/middleName
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.home
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMuaG9tZQ
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.home
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:entitlements
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDplbnRpdGxlbWVudHM
+  mappedLocalClaimURI: http://wso2.org/claims/entitlements
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:externalId
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpleHRlcm5hbElk
+  mappedLocalClaimURI: http://wso2.org/claims/externalid
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:displayName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpkaXNwbGF5TmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/displayName
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:roles
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpyb2xlcw
+  mappedLocalClaimURI: http://wso2.org/claims/role
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.formatted
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMuZm9ybWF0dGVk
+  mappedLocalClaimURI: http://wso2.org/claims/addresses.formatted
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:emails
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDplbWFpbHM
+  mappedLocalClaimURI: http://wso2.org/claims/emailaddress
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:emails.work
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDplbWFpbHMud29yaw
+  mappedLocalClaimURI: http://wso2.org/claims/emails.work
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:userName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDp1c2VyTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/username
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:nickName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuaWNrTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/nickname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:ims.skype
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDppbXMuc2t5cGU
+  mappedLocalClaimURI: http://wso2.org/claims/skype
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:preferredLanguage
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwcmVmZXJyZWRMYW5ndWFnZQ
+  mappedLocalClaimURI: http://wso2.org/claims/preferredLanguage
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.other
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMub3RoZXI
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.other
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.region
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMucmVnaW9u
+  mappedLocalClaimURI: http://wso2.org/claims/region
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:emails.home
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDplbWFpbHMuaG9tZQ
+  mappedLocalClaimURI: http://wso2.org/claims/emails.home
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.formatted
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLmZvcm1hdHRlZA
+  mappedLocalClaimURI: http://wso2.org/claims/formattedName
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:profileUrl
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwcm9maWxlVXJs
+  mappedLocalClaimURI: http://wso2.org/claims/url
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.fax
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMuZmF4
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.fax
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.familyName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLmZhbWlseU5hbWU
+  mappedLocalClaimURI: http://wso2.org/claims/lastname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:x509Certificates
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDp4NTA5Q2VydGlmaWNhdGVz
+  mappedLocalClaimURI: http://wso2.org/claims/x509Certificates
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:ims
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDppbXM
+  mappedLocalClaimURI: http://wso2.org/claims/im
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:meta.created
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDptZXRhLmNyZWF0ZWQ
+  mappedLocalClaimURI: http://wso2.org/claims/created
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.country
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMuY291bnRyeQ
+  mappedLocalClaimURI: http://wso2.org/claims/country
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:emails.other
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDplbWFpbHMub3RoZXI
+  mappedLocalClaimURI: http://wso2.org/claims/emails.other
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.work
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMud29yaw
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.work
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers.mobile
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnMubW9iaWxl
+  mappedLocalClaimURI: http://wso2.org/claims/mobile
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:meta.location
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDptZXRhLmxvY2F0aW9u
+  mappedLocalClaimURI: http://wso2.org/claims/location
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXM
+  mappedLocalClaimURI: http://wso2.org/claims/addresses
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:timeZone
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDp0aW1lWm9uZQ
+  mappedLocalClaimURI: http://wso2.org/claims/timeZone
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:photos.photo
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG90b3MucGhvdG8
+  mappedLocalClaimURI: http://wso2.org/claims/photourl
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:locale
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpsb2NhbGU
+  mappedLocalClaimURI: http://wso2.org/claims/local
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:name.givenName
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpuYW1lLmdpdmVuTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/givenname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:phoneNumbers
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDpwaG9uZU51bWJlcnM
+  mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:ims.gtalk
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDppbXMuZ3RhbGs
+  mappedLocalClaimURI: http://wso2.org/claims/gtalk
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:scim:schemas:core:1.0
+  claimURI: urn:scim:schemas:core:1.0:addresses.postalCode
+  id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMDphZGRyZXNzZXMucG9zdGFsQ29kZQ
+  mappedLocalClaimURI: http://wso2.org/claims/postalcode
+dialectURI: urn:scim:schemas:core:1.0
+id: dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMA
+link:
+  href: /t/carbon.super/api/server/v1/claim-dialects/dXJuOnNjaW06c2NoZW1hczpjb3JlOjEuMA/claims
+  rel: claims

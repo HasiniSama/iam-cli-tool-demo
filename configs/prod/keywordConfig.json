@@ -5,7 +5,7 @@
         "ENV" : "PROD"
     },
     "APPLICATIONS" : {
-        "photo-editor" : {
+        "Photo Editor" : {
             "KEYWORD_MAPPINGS" : {
               "CALLBACK_DOMAIN" : "demo.prod.photo-editor.io"
             }
