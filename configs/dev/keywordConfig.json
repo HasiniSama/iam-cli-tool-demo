@@ -7,7 +7,7 @@
     "APPLICATIONS" : {
         "photo-editor" : {
             "KEYWORD_MAPPINGS" : {
-              "CALLBACK_DOMAIN" : "demo.dev.photo-editor.io",
+              "CALLBACK_DOMAIN" : "demo.dev.photo-editor.io"
             }
         }
     }
