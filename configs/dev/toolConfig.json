@@ -1,0 +1,9 @@
+{
+    "ALLOW_DELETE" : true,
+    "IDENTITY_PROVIDERS" : {
+        "INCLUDE_ONLY" : ["Google"]
+    },
+    "USERSTORES" : {
+        "EXCLUDE" : ["TestUserStore"]
+    }
+}
