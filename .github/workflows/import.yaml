@@ -6,10 +6,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      RELEASE_VERSION: v1.0.4
-      FULL_FILE_NAME: iamctl-1.0.4-linux-x64.tar.gz
-      FILE_NAME: iamctl-1.0.4
-      ENV_NAME: prod
+      RELEASE_VERSION: v1.0.7
+      FULL_FILE_NAME: iamctl-1.0.7-linux-x64.tar.gz
+      FILE_NAME: iamctl-1.0.7
+      PROD_CLIENT_ID: ${{ secrets.PROD_CLIENT_ID }}
+      PROD_CLIENT_SECRET: ${{ secrets.PROD_CLIENT_SECRET }}
+      PROD_SERVER_URL: ${{ secrets.PROD_SERVER_URL }}
+      PROD_TENANT_DOMAIN: ${{ secrets.PROD_TENANT_DOMAIN }}
     steps:
       - name: Download files from the current repository
         uses: actions/checkout@v2
