@@ -1,5 +1,11 @@
 {
+    "ALLOW_DELETE" : true,
     "EXCLUDE_SECRETS" : true,
+    "APPLICATIONS" : {
+        "INCLUDE_ONLY" : ["Photo Editor"],
+        "EXCLUDE" : ["Console", "Prod-mgt-SP", "My Account"],
+        "EXCLUDE_SECRETS" : false
+    },
     "IDENTITY_PROVIDERS" : {
         "INCLUDE_ONLY" : ["Google"]
     },
