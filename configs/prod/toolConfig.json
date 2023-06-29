@@ -1,6 +1,6 @@
 {
     "ALLOW_DELETE" : true,
-    "EXCLUDE_SECRETS" : true
+    "EXCLUDE_SECRETS" : true,
     "IDENTITY_PROVIDERS" : {
         "INCLUDE_ONLY" : ["Google"]
     },
