@@ -1,0 +1,52 @@
+!!org.wso2.carbon.identity.rest.api.server.claim.management.v1.model.ClaimDialectConfiguration
+claims:
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/contact/email
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9jb250YWN0L2VtYWls
+  mappedLocalClaimURI: http://wso2.org/claims/emailaddress
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/namePerson/first
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9uYW1lUGVyc29uL2ZpcnN0
+  mappedLocalClaimURI: http://wso2.org/claims/givenname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/birthDate
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9iaXJ0aERhdGU
+  mappedLocalClaimURI: http://wso2.org/claims/dob
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/contact/postalCode/home
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9jb250YWN0L3Bvc3RhbENvZGUvaG9tZQ
+  mappedLocalClaimURI: http://wso2.org/claims/postalcode
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/person/gender
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9wZXJzb24vZ2VuZGVy
+  mappedLocalClaimURI: http://wso2.org/claims/gender
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/contact/country/home
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9jb250YWN0L2NvdW50cnkvaG9tZQ
+  mappedLocalClaimURI: http://wso2.org/claims/country
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/pref/language
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9wcmVmL2xhbmd1YWdl
+  mappedLocalClaimURI: http://wso2.org/claims/preferredLanguage
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/pref/timezone
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9wcmVmL3RpbWV6b25l
+  mappedLocalClaimURI: http://wso2.org/claims/timeZone
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://axschema.org
+  claimURI: http://axschema.org/namePerson/last
+  id: aHR0cDovL2F4c2NoZW1hLm9yZy9uYW1lUGVyc29uL2xhc3Q
+  mappedLocalClaimURI: http://wso2.org/claims/lastname
+dialectURI: http://axschema.org
+id: aHR0cDovL2F4c2NoZW1hLm9yZw
+link:
+  href: /t/carbon.super/api/server/v1/claim-dialects/aHR0cDovL2F4c2NoZW1hLm9yZw/claims
+  rel: claims
