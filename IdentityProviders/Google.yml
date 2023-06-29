@@ -1,0 +1,726 @@
+!!org.wso2.carbon.identity.application.common.model.IdentityProvider
+alias: https://localhost:9443/oauth2/token
+certificate: ""
+claimConfig:
+  alwaysSendMappedLocalSubjectId: false
+  claimMappings: []
+  idpClaims: []
+  localClaimDialect: true
+  roleClaimURI: http://wso2.org/claims/roles
+  spClaimDialects: []
+  userClaimURI: null
+defaultAuthenticatorConfig:
+  displayName: Google
+  enabled: true
+  name: GoogleOIDCAuthenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: AdditionalQueryParameters
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: scope=openid email profile
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientSecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: 653079335095-l233tfj78roprg3ef7fdshdgd48ghb6k.apps.googleusercontent.com
+  tags: null
+defaultProvisioningConnectorConfig: null
+displayName: null
+enable: true
+federatedAuthenticatorConfigs:
+- displayName: Microsoft
+  enabled: false
+  name: MicrosoftWindowsLiveAuthenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientSecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  tags: null
+- displayName: Apple
+  enabled: false
+  name: AppleOIDCAuthenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: KeyId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: AdditionalQueryParameters
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: TeamId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: SecretExpiryEpochTime
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: PrivateKey
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: Scopes
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: name email
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: SecretValidityPeriod
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: "15777000"
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientSecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  tags: null
+- displayName: Google
+  enabled: true
+  name: GoogleOIDCAuthenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: AdditionalQueryParameters
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: scope=openid email profile
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientSecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: 653079335095-l233tfj78roprg3ef7fdshdgd48ghb6k.apps.googleusercontent.com
+  tags: null
+- displayName: SMS
+  enabled: false
+  name: SMSOTP
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: payload
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: values_to_be_masked
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: sms_url
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: http_response
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: headers
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: mobile_number_regex
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: mobile_number_pattern_failure_error_message
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: show_detailed_error_info
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: http_method
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  tags: null
+- displayName: twitter
+  enabled: false
+  name: TwitterAuthenticator
+  properties:
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: APISecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: APIKey
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  tags: null
+- displayName: Email
+  enabled: false
+  name: EmailOTP
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: EmailOtpExpiryTime
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: Email
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: EmailAPI
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: EmailOtpLength
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  tags: null
+- displayName: IWA
+  enabled: false
+  name: IWAKerberosAuthenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: SPNName
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: UserStoreDomains
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: SPNPassword
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  tags: null
+- displayName: Office365
+  enabled: false
+  name: Office365Authenticator
+  properties:
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: callbackUrl
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientId
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: ""
+  - advanced: false
+    confidential: false
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: AdditionalQueryParameters
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: username={username}&login_hint={username}
+  - advanced: false
+    confidential: true
+    defaultValue: null
+    description: null
+    displayName: null
+    displayOrder: 0
+    groupId: 0
+    name: ClientSecret
+    options: []
+    regex: null
+    required: false
+    subProperties: []
+    type: null
+    value: '********'
+  tags: null
+federationHub: false
+homeRealmId: null
+idPGroupConfig: []
+identityProviderDescription: GoogleIdP in DEV
+identityProviderName: Google
+idpProperties:
+- displayName: null
+  name: isTrustedTokenIssuer
+  value: "false"
+imageUrl: null
+justInTimeProvisioningConfig:
+  associateLocalUserEnabled: false
+  attributeSyncMethod: OVERRIDE_ALL
+  dumbMode: false
+  modifyUserNameAllowed: false
+  passwordProvisioningEnabled: false
+  promptConsent: false
+  provisioningEnabled: false
+  provisioningUserStore: null
+  userStoreClaimUri: null
+permissionAndRoleConfig:
+  idpRoles: []
+  permissions: []
+  roleMappings: []
+primary: false
+provisioningConnectorConfigs:
+- blocking: false
+  enabled: false
+  name: googleapps
+  provisioningProperties: []
+  rulesEnabled: false
+- blocking: false
+  enabled: false
+  name: salesforce
+  provisioningProperties: []
+  rulesEnabled: false
+- blocking: false
+  enabled: false
+  name: SCIM2
+  provisioningProperties: []
+  rulesEnabled: false
+- blocking: false
+  enabled: false
+  name: scim
+  provisioningProperties: []
+  rulesEnabled: false
+provisioningRole: null
+templateId: null
+trustedTokenIssuer: false

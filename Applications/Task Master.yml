@@ -1,0 +1,49 @@
+!!org.wso2.carbon.identity.application.common.model.ServiceProvider
+accessUrl: ""
+applicationName: Task Master
+b2BSelfServiceApp: false
+certificateContent: null
+claimConfig:
+  alwaysSendMappedLocalSubjectId: false
+  claimMappings: []
+  idpClaims: []
+  localClaimDialect: true
+  roleClaimURI: ""
+  spClaimDialects: []
+  userClaimURI: null
+description: A task organizing application
+discoverable: false
+imageUrl: ""
+inboundAuthenticationConfig:
+  inboundAuthenticationRequestConfigs: []
+inboundProvisioningConfig:
+  dumbMode: false
+  provisioningEnabled: false
+  provisioningUserStore: ""
+jwksUri: ""
+localAndOutBoundAuthenticationConfig:
+  alwaysSendBackAuthenticatedListOfIdPs: false
+  authenticationScriptConfig: null
+  authenticationStepForAttributes: null
+  authenticationStepForSubject: null
+  authenticationSteps: []
+  authenticationType: default
+  enableAuthorization: false
+  skipConsent: false
+  skipLogoutConsent: false
+  subjectClaimUri: null
+  useExternalConsentPage: false
+  useTenantDomainInLocalSubjectIdentifier: false
+  useUserstoreDomainInLocalSubjectIdentifier: false
+  useUserstoreDomainInRoles: true
+managementApp: false
+outboundProvisioningConfig:
+  provisionByRoleList: null
+  provisioningIdentityProviders: []
+permissionAndRoleConfig:
+  idpRoles: []
+  permissions: []
+  roleMappings: []
+requestPathAuthenticatorConfigs: []
+saasApp: false
+templateId: ""
