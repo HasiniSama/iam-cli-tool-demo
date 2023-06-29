@@ -1,0 +1,14 @@
+{
+    "KEYWORD_MAPPINGS" : {
+        "CALLBACK_DOMAIN" : "demo.dev.io",
+        "MY_SECRET": "${MY_SECRET}",
+        "ENV" : "DEV"
+    },
+    "APPLICATIONS" : {
+        "photo-editor" : {
+            "KEYWORD_MAPPINGS" : {
+              "CALLBACK_DOMAIN" : "demo.dev.photo-editor.io",
+            }
+        }
+    }
+}

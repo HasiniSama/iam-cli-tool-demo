@@ -1,4 +1,4 @@
-name: Initial Setup
+name: Export Configurations
 on:
   workflow_dispatch:
 
@@ -9,12 +9,17 @@ jobs:
       RELEASE_VERSION: v1.0.7
       FULL_FILE_NAME: iamctl-1.0.7-linux-x64.tar.gz
       FILE_NAME: iamctl-1.0.7
+      PROD_CLIENT_ID: ${{ secrets.PROD_CLIENT_ID }}
+      PROD_CLIENT_SECRET: ${{ secrets.PROD_CLIENT_SECRET }}
+      PROD_SERVER_URL: ${{ secrets.PROD_SERVER_URL }}
+      PROD_TENANT_DOMAIN: ${{ secrets.PROD_TENANT_DOMAIN }}
+      MY_SECRET: ${{ secrets.MY_SECRET }}
     steps:
       - name: Download files from the current repository
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-
+        
       - name: Download and unzip latest identity-tools-cli release
         run: |
           # Download the release file
@@ -23,44 +28,13 @@ jobs:
           
       - name: Extract release file
         run: tar -xzf "${FULL_FILE_NAME}"
-  
-      - name: Run setup command
+      
+      - name: Run export command
         run: |
+          branch_name=$(basename "${{ github.ref }}")
           cd "${FILE_NAME}/bin"
-          ./iamctl setupCLI -d "../../"
-
-      - name: Fetch All Remote Branches
-        run: git fetch --all
-
-      - name: Get Branch Names
-        id: branch-names
-        run: |
-          branches=($(git branch -a --format="%(refname:short)" | grep -v "HEAD" | sed 's/origin\///' | sort -u))
-          echo "::set-output name=branches::${branches[*]}"
-      
-      - name: Set Branch Names
-        id: set-branch-names
-        run: |
-          branches=$(git branch -r --format="%(refname:short)" | sed 's/origin\///' | tr '\n' ' ')
-          echo "::set-output name=branches::$branches"
-
-      - name: Create Branch Folders and Copy Env Content
-        run: |
-          for branch in ${{ steps.set-branch-names.outputs.branches }}; do
-            branch_folder="configs/$branch"
-            mkdir -p "$branch_folder"
-            cp -R configs/env/. "$branch_folder"
-          done
-
-      - name: Delete Env Folder
-        run: |
-          rm -rf configs/env
-      
-      - name: Change to Configs Directory and List Contents
-        run: |
-          cd configs
-          ls
-
+          ./iamctl exportAll -c "../../configs/$branch_name"
+          
       - name: Delete release files
         run: |
           rm "${{ env.FULL_FILE_NAME }}"
