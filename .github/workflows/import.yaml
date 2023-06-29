@@ -1,6 +1,8 @@
 name: Import Configurations
 on:
-  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
 
 jobs:
   deploy:
