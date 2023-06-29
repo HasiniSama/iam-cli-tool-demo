@@ -1,1 +1,6 @@
-{"CLIENT_ID":"","CLIENT_SECRET":"","SERVER_URL":"","TENANT_DOMAIN":""}
+{
+    "CLIENT_ID": "iaaRTqlXFrrS9kcBkxPeu7qRVTMa",
+    "CLIENT_SECRET": "UhQC0XJFcvhfynaQIcQPb1NAS6nlvVzAZQrfiq64VdQa",
+    "SERVER_URL": "https://is-dev.centralindia.cloudapp.azure.com",
+    "TENANT_DOMAIN": "carbon.super"
+}
