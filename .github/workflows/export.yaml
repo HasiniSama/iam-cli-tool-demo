@@ -13,6 +13,7 @@ jobs:
       PROD_CLIENT_SECRET: ${{ secrets.PROD_CLIENT_SECRET }}
       PROD_SERVER_URL: ${{ secrets.PROD_SERVER_URL }}
       PROD_TENANT_DOMAIN: ${{ secrets.PROD_TENANT_DOMAIN }}
+      MY_SECRET: ${{ secrets.MY_SECRET }}
     steps:
       - name: Download files from the current repository
         uses: actions/checkout@v2
