@@ -2,6 +2,26 @@
 claims:
 - !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
   claimDialectURI: http://schema.openid.net/2007/05/claims
+  claimURI: gender
+  id: Z2VuZGVy
+  mappedLocalClaimURI: http://wso2.org/claims/gender
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://schema.openid.net/2007/05/claims
+  claimURI: timezone
+  id: dGltZXpvbmU
+  mappedLocalClaimURI: http://wso2.org/claims/timeZone
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://schema.openid.net/2007/05/claims
+  claimURI: language
+  id: bGFuZ3VhZ2U
+  mappedLocalClaimURI: http://wso2.org/claims/preferredLanguage
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://schema.openid.net/2007/05/claims
+  claimURI: postcode
+  id: cG9zdGNvZGU
+  mappedLocalClaimURI: http://wso2.org/claims/postalcode
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://schema.openid.net/2007/05/claims
   claimURI: email
   id: ZW1haWw
   mappedLocalClaimURI: http://wso2.org/claims/emailaddress
@@ -25,26 +45,6 @@ claims:
   claimURI: fullname
   id: ZnVsbG5hbWU
   mappedLocalClaimURI: http://wso2.org/claims/fullname
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://schema.openid.net/2007/05/claims
-  claimURI: gender
-  id: Z2VuZGVy
-  mappedLocalClaimURI: http://wso2.org/claims/gender
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://schema.openid.net/2007/05/claims
-  claimURI: timezone
-  id: dGltZXpvbmU
-  mappedLocalClaimURI: http://wso2.org/claims/timeZone
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://schema.openid.net/2007/05/claims
-  claimURI: language
-  id: bGFuZ3VhZ2U
-  mappedLocalClaimURI: http://wso2.org/claims/preferredLanguage
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://schema.openid.net/2007/05/claims
-  claimURI: postcode
-  id: cG9zdGNvZGU
-  mappedLocalClaimURI: http://wso2.org/claims/postalcode
 dialectURI: http://schema.openid.net/2007/05/claims
 id: aHR0cDovL3NjaGVtYS5vcGVuaWQubmV0LzIwMDcvMDUvY2xhaW1z
 link:

@@ -210,7 +210,7 @@ properties:
 - name: maxActive
   value: "40"
 - name: UniqueID
-  value: 6d858ce8-6685-42c8-a886-410f77749594
+  value: 0674b1f4-5da1-466d-b669-1cfe9d532247
 - name: RemoveUserFromSharedRoleSQL
   value: DELETE FROM UM_SHARED_USER_ROLE WHERE UM_ROLE_ID=(SELECT UM_ID FROM UM_ROLE
     WHERE UM_ROLE_NAME=? AND UM_TENANT_ID=?) AND UM_USER_ID=(SELECT UM_ID FROM UM_USER

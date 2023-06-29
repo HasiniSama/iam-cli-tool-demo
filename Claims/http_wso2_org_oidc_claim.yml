@@ -2,26 +2,6 @@
 claims:
 - !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
   claimDialectURI: http://wso2.org/oidc/claim
-  claimURI: given_name
-  id: Z2l2ZW5fbmFtZQ
-  mappedLocalClaimURI: http://wso2.org/claims/givenname
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://wso2.org/oidc/claim
-  claimURI: locality
-  id: bG9jYWxpdHk
-  mappedLocalClaimURI: http://wso2.org/claims/locality
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://wso2.org/oidc/claim
-  claimURI: updated_at
-  id: dXBkYXRlZF9hdA
-  mappedLocalClaimURI: http://wso2.org/claims/modified
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://wso2.org/oidc/claim
-  claimURI: email_verified
-  id: ZW1haWxfdmVyaWZpZWQ
-  mappedLocalClaimURI: http://wso2.org/claims/identity/emailVerified
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://wso2.org/oidc/claim
   claimURI: region
   id: cmVnaW9u
   mappedLocalClaimURI: http://wso2.org/claims/region
@@ -145,6 +125,26 @@ claims:
   claimURI: birthdate
   id: YmlydGhkYXRl
   mappedLocalClaimURI: http://wso2.org/claims/dob
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://wso2.org/oidc/claim
+  claimURI: given_name
+  id: Z2l2ZW5fbmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/givenname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://wso2.org/oidc/claim
+  claimURI: locality
+  id: bG9jYWxpdHk
+  mappedLocalClaimURI: http://wso2.org/claims/locality
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://wso2.org/oidc/claim
+  claimURI: updated_at
+  id: dXBkYXRlZF9hdA
+  mappedLocalClaimURI: http://wso2.org/claims/modified
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://wso2.org/oidc/claim
+  claimURI: email_verified
+  id: ZW1haWxfdmVyaWZpZWQ
+  mappedLocalClaimURI: http://wso2.org/claims/identity/emailVerified
 dialectURI: http://wso2.org/oidc/claim
 id: aHR0cDovL3dzbzIub3JnL29pZGMvY2xhaW0
 link:

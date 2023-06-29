@@ -2,6 +2,21 @@
 claims:
 - !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
   claimDialectURI: http://eidas.europa.eu/attributes/legalperson
+  claimURI: http://eidas.europa.eu/attributes/legalperson/LegalName
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0xlZ2FsTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/extendedDisplayName
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
+  claimURI: http://eidas.europa.eu/attributes/legalperson/LegalPersonIdentifier
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0xlZ2FsUGVyc29uSWRlbnRpZmllcg
+  mappedLocalClaimURI: http://wso2.org/claims/extendedExternalId
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
+  claimURI: http://eidas.europa.eu/attributes/legalperson/VATRegistrationNumber
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL1ZBVFJlZ2lzdHJhdGlvbk51bWJlcg
+  mappedLocalClaimURI: http://wso2.org/claims/im
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
   claimURI: http://eidas.europa.eu/attributes/legalperson/EORI
   id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0VPUkk
   mappedLocalClaimURI: http://wso2.org/claims/department
@@ -30,26 +45,6 @@ claims:
   claimURI: http://eidas.europa.eu/attributes/legalperson/LEI
   id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0xFSQ
   mappedLocalClaimURI: http://wso2.org/claims/extendedRef
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
-  claimURI: http://eidas.europa.eu/attributes/legalperson/LegalName
-  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0xlZ2FsTmFtZQ
-  mappedLocalClaimURI: http://wso2.org/claims/extendedDisplayName
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
-  claimURI: http://eidas.europa.eu/attributes/legalperson/LegalPersonIdentifier
-  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL0xlZ2FsUGVyc29uSWRlbnRpZmllcg
-  mappedLocalClaimURI: http://wso2.org/claims/extendedExternalId
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
-  claimURI: http://eidas.europa.eu/attributes/legalperson/SIC
-  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL1NJQw
-  mappedLocalClaimURI: http://wso2.org/claims/nickname
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: http://eidas.europa.eu/attributes/legalperson
-  claimURI: http://eidas.europa.eu/attributes/legalperson/VATRegistrationNumber
-  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29uL1ZBVFJlZ2lzdHJhdGlvbk51bWJlcg
-  mappedLocalClaimURI: http://wso2.org/claims/im
 dialectURI: http://eidas.europa.eu/attributes/legalperson
 id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL2xlZ2FscGVyc29u
 link:

@@ -2,6 +2,31 @@
 claims:
 - !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
   claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
+  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.honorificPrefix
+  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUuaG9ub3JpZmljUHJlZml4
+  mappedLocalClaimURI: http://wso2.org/claims/honorificPrefix
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
+  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.middleName
+  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUubWlkZGxlTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/middleName
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
+  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:addresses.work
+  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOmFkZHJlc3Nlcy53b3Jr
+  mappedLocalClaimURI: http://wso2.org/claims/region
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
+  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:locale
+  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOmxvY2FsZQ
+  mappedLocalClaimURI: http://wso2.org/claims/local
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
+  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.givenName
+  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUuZ2l2ZW5OYW1l
+  mappedLocalClaimURI: http://wso2.org/claims/givenname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
   claimURI: urn:ietf:params:scim:schemas:core:2.0:User:emails
   id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOmVtYWlscw
   mappedLocalClaimURI: http://wso2.org/claims/emailaddress
@@ -160,31 +185,6 @@ claims:
   claimURI: urn:ietf:params:scim:schemas:core:2.0:User:phoneNumbers.home
   id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOnBob25lTnVtYmVycy5ob21l
   mappedLocalClaimURI: http://wso2.org/claims/phoneNumbers.home
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
-  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.honorificPrefix
-  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUuaG9ub3JpZmljUHJlZml4
-  mappedLocalClaimURI: http://wso2.org/claims/honorificPrefix
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
-  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.middleName
-  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUubWlkZGxlTmFtZQ
-  mappedLocalClaimURI: http://wso2.org/claims/middleName
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
-  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:addresses.work
-  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOmFkZHJlc3Nlcy53b3Jr
-  mappedLocalClaimURI: http://wso2.org/claims/region
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
-  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:locale
-  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOmxvY2FsZQ
-  mappedLocalClaimURI: http://wso2.org/claims/local
-- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
-  claimDialectURI: urn:ietf:params:scim:schemas:core:2.0:User
-  claimURI: urn:ietf:params:scim:schemas:core:2.0:User:name.givenName
-  id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2VyOm5hbWUuZ2l2ZW5OYW1l
-  mappedLocalClaimURI: http://wso2.org/claims/givenname
 dialectURI: urn:ietf:params:scim:schemas:core:2.0:User
 id: dXJuOmlldGY6cGFyYW1zOnNjaW06c2NoZW1hczpjb3JlOjIuMDpVc2Vy
 link:

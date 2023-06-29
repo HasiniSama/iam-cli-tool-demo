@@ -45,7 +45,7 @@ inboundAuthenticationConfig:
       idTokenEncryptionMethod: "null"
       idTokenExpiryTime: 3600
       oauthConsumerKey: Z2vfNZyJuOAZghvzB41USDIk8Sca
-      oauthConsumerSecret: '{{MY_SECRET}}'
+      oauthConsumerSecret: rdlye5pmTXxs8LxyOlmoFRWoZFNFISCbqEnICinQPMUa
       oauthVersion: OAuth-2.0
       pkceMandatory: false
       pkceSupportPlain: true
