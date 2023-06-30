@@ -1,7 +1,7 @@
 {
     "EXCLUDE_SECRETS" : true,
     "APPLICATIONS" : {
-        "EXCLUDE" : ["Console", "Prod-mgt-SP", "My Account"]
+        "EXCLUDE" : ["Console", "Prod-mgt-SP", "My Account"],
     },
     "IDENTITY_PROVIDERS" : {
         "INCLUDE_ONLY" : ["Facebook"]
