@@ -2,7 +2,7 @@
     "EXCLUDE_SECRETS" : true,
     "APPLICATIONS" : {
         "INCLUDE_ONLY" : ["Photo Editor","Pickup Dispatch"],
-        "EXCLUDE" : ["Console", "Dev-mgt-SP", "My Account"],
+        "EXCLUDE" : ["Console", "Dev-mgt-SP", "My Account"]
     },
     "IDENTITY_PROVIDERS" : {
         "INCLUDE_ONLY" : ["Google"]
