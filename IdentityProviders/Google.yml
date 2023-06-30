@@ -55,7 +55,7 @@ defaultAuthenticatorConfig:
     required: false
     subProperties: []
     type: null
-    value: ""
+    value: https://localhost:9443/commonauth
   - advanced: false
     confidential: false
     defaultValue: null
@@ -312,7 +312,7 @@ federatedAuthenticatorConfigs:
     required: false
     subProperties: []
     type: null
-    value: ""
+    value: https://localhost:9443/commonauth
   - advanced: false
     confidential: false
     defaultValue: null
