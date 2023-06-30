@@ -1,15 +1,12 @@
 {
     "EXCLUDE_SECRETS" : true,
-    "EXCLUDE" : ["UserStores"],
     "APPLICATIONS" : {
-        "INCLUDE_ONLY" : ["Photo Editor","Pickup Dispatch"],
         "EXCLUDE" : ["Console", "Prod-mgt-SP", "My Account"]
     },
     "IDENTITY_PROVIDERS" : {
-        "INCLUDE_ONLY" : ["Facebook"],
-	    "EXCLUDE_SECRETS" : false
+        "INCLUDE_ONLY" : ["Facebook"]
     },
-    "CLAIMS" : {
-        "INCLUDE_ONLY" : ["http://axschema.org"]
+    "USERSTORES" : {
+        "EXCLUDE" : ["MySQL"]
     }
 }
