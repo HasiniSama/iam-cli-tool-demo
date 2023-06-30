@@ -11,7 +11,7 @@ claimConfig:
   roleClaimURI: ""
   spClaimDialects: []
   userClaimURI: null
-description: A photo editor application in {{ENV}}
+description: A photo editor application in DEV changed
 discoverable: false
 imageUrl: ""
 inboundAuthenticationConfig:
