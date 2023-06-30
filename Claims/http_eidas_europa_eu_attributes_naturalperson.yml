@@ -1,0 +1,47 @@
+!!org.wso2.carbon.identity.rest.api.server.claim.management.v1.model.ClaimDialectConfiguration
+claims:
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/PersonIdentifier
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vUGVyc29uSWRlbnRpZmllcg
+  mappedLocalClaimURI: http://wso2.org/claims/userid
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/CurrentFamilyName
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vQ3VycmVudEZhbWlseU5hbWU
+  mappedLocalClaimURI: http://wso2.org/claims/lastname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/DateOfBirth
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vRGF0ZU9mQmlydGg
+  mappedLocalClaimURI: http://wso2.org/claims/dob
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/BirthName
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vQmlydGhOYW1l
+  mappedLocalClaimURI: http://wso2.org/claims/username
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/CurrentGivenName
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vQ3VycmVudEdpdmVuTmFtZQ
+  mappedLocalClaimURI: http://wso2.org/claims/givenname
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/PlaceOfBirth
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vUGxhY2VPZkJpcnRo
+  mappedLocalClaimURI: http://wso2.org/claims/country
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/CurrentAddress
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vQ3VycmVudEFkZHJlc3M
+  mappedLocalClaimURI: http://wso2.org/claims/addresses
+- !!org.wso2.carbon.identity.rest.api.server.claim.management.v1.dto.ExternalClaimResDTO
+  claimDialectURI: http://eidas.europa.eu/attributes/naturalperson
+  claimURI: http://eidas.europa.eu/attributes/naturalperson/Gender
+  id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24vR2VuZGVy
+  mappedLocalClaimURI: http://wso2.org/claims/gender
+dialectURI: http://eidas.europa.eu/attributes/naturalperson
+id: aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24
+link:
+  href: /t/carbon.super/api/server/v1/claim-dialects/aHR0cDovL2VpZGFzLmV1cm9wYS5ldS9hdHRyaWJ1dGVzL25hdHVyYWxwZXJzb24/claims
+  rel: claims
