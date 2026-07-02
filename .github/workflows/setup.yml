@@ -1,0 +1,74 @@
+# ── One-time setup ─────────────────────────────────────────────────────────
+# Generates the IAM-CTL config folders (configs/dev and configs/prod)
+# and opens a PR so you can review them before they land in the repo.
+# You run this ONCE, then never touch it again.
+
+name: Initial Setup
+
+on:
+  # No automatic triggers - you run this manually from the Actions tab.
+  workflow_dispatch:
+
+# The PR-creation step needs permission to push a branch and open a PR.
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  # Pin the IAM-CTL version so the workflow is reproducible.
+  # v3.0.0 is the latest release (check the releases page for newer ones:
+  # https://github.com/wso2-extensions/identity-tools-cli/releases)
+  IAMCTL_VERSION: v3.0.0
+  IAMCTL_ARCHIVE: iamctl-3.0.0-linux-x64.tar.gz
+  IAMCTL_DIR: iamctl-3.0.0
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Get a copy of the repo into the runner.
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      # 2. Download the IAM-CTL binary and unpack it.
+      - name: Download and extract IAM-CTL
+        run: |
+          curl -L -o "$IAMCTL_ARCHIVE" \
+            "https://github.com/wso2-extensions/identity-tools-cli/releases/download/${IAMCTL_VERSION}/${IAMCTL_ARCHIVE}"
+          tar -xzf "$IAMCTL_ARCHIVE"
+
+      # 3. Ask IAM-CTL to generate its config files.
+      #    This creates configs/env/ with three template files:
+      #    serverConfig.json, toolConfig.json, keywordConfig.json
+      - name: Generate config templates
+        run: ./${IAMCTL_DIR}/bin/iamctl setupCLI
+
+      # 4. We need one config folder PER ENVIRONMENT, so copy the
+      #    generated template into configs/dev and configs/prod,
+      #    then remove the template folder.
+      - name: Create per-environment config folders
+        run: |
+          for env_name in dev prod; do
+            mkdir -p "configs/$env_name"
+            cp -R configs/env/. "configs/$env_name"
+          done
+          rm -rf configs/env
+
+      # 5. Don't commit the downloaded tool - only the configs.
+      - name: Clean up the downloaded tool
+        run: rm -rf "$IAMCTL_ARCHIVE" "$IAMCTL_DIR"
+
+      # 6. Open a pull request with the new config folders so you can
+      #    review (and edit!) them before merging.
+      - name: Open a pull request with the config files
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Add IAM-CTL environment configs"
+          title: "Initial IAM-CTL setup"
+          body: |
+            Generated IAM-CTL config folders for `dev` and `prod`.
+            Edit each `serverConfig.json` to point to the right Identity Platform org
+            before merging.
+          branch: iamctl-setup
+          delete-branch: true
+          base: dev
