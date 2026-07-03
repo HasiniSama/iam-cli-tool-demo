@@ -1,1 +1,6 @@
-{"CLIENT_ID":"","CLIENT_SECRET":"","ORGANIZATION":"","SERVER_URL":"","SERVER_VERSION":"","TENANT_DOMAIN":""}
+{
+    "SERVER_URL": "https://api.asgardeo.io",
+    "TENANT_DOMAIN": "demodev",
+    "CLIENT_ID": "${DEV_CLIENT_ID}",
+    "CLIENT_SECRET": "${DEV_CLIENT_SECRET}"
+}
