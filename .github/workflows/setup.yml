@@ -71,4 +71,4 @@ jobs:
             before merging.
           branch: iamctl-setup
           delete-branch: true
-          base: dev
+          base: base: ${{ github.ref_name }}
