@@ -1,0 +1,32 @@
+- field: password
+  rules:
+    - properties:
+        - key: min.length
+          value: "8"
+      validator: LengthValidator
+    - properties:
+        - key: max.length
+          value: "64"
+      validator: LengthValidator
+    - properties:
+        - key: min.length
+          value: "1"
+      validator: NumeralValidator
+    - properties:
+        - key: min.length
+          value: "1"
+      validator: UpperCaseValidator
+    - properties:
+        - key: min.length
+          value: "1"
+      validator: LowerCaseValidator
+    - properties:
+        - key: min.length
+          value: "0"
+      validator: SpecialCharacterValidator
+- field: username
+  rules:
+    - properties:
+        - key: enable.validator
+          value: "true"
+      validator: EmailFormatValidator
