@@ -1,0 +1,196 @@
+accessUrl: https://console.asgardeo.io/t/demodev/console
+advancedConfigurations:
+    additionalSpProperties:
+        - displayName: Is B2B Self Service Application
+          name: isB2BSelfServiceApp
+          value: "false"
+        - displayName: Is System Reserved Application
+          name: isSystemReservedApp
+          value: "true"
+        - name: roleSharingMode
+          value: ALL
+    attestationMetaData:
+        androidPackageName: ""
+        appleAppId: ""
+        enableClientAttestation: false
+    discoverableByEndUsers: false
+    enableAPIBasedAuthentication: false
+    enableAuthorization: false
+    fragment: false
+    returnAuthenticatedIdpList: false
+    saas: false
+    skipLoginConsent: true
+    skipLogoutConsent: true
+    useExternalConsentPage: false
+applicationEnabled: true
+applicationVersion: v3.0.0
+associatedRoles:
+    allowedAudience: APPLICATION
+    roles:
+        - id: 2d7ed942-558c-4398-bf9e-57342f0f5e7d
+          name: Editor - Connections
+        - id: 40865d2e-d989-4d9b-9813-0e009367d0cf
+          name: Administrator
+        - id: 8a771eac-d72e-4b3c-823b-b5fff28c2365
+          name: Editor - Users
+        - id: adc25db6-667a-4157-afec-d9b6beba95b0
+          name: Auditor
+        - id: c22dad3d-c9d8-4436-8a69-8d10e0e2dac9
+          name: Editor - Applications
+        - id: e4097e63-4cf0-423a-86ab-8a34edffa18d
+          name: Viewer - Applications
+        - id: eb452efc-b678-406c-8d8a-2653fba5abce
+          name: Viewer - Users
+authenticationSequence:
+    attributeStepId: 1
+    requestPathAuthenticators: []
+    script: |-
+        var onLoginRequest = function onLoginRequest(context) {
+
+            var fedUser;
+            executeStep(1, {
+                onSuccess: function(context) {
+                    var idpName = context.steps[1].idp;
+
+                    // Only execute this flow when the user login from the central idp.
+                    if (idpName === "Asgardeo Platform IDP") {
+                        fedUser = context.currentKnownSubject;
+
+                        // Check is there is already a user association
+                        var assocUser = getAssociatedLocalUser(fedUser);
+                        if (assocUser == null) {
+                            var claimMap = {};
+                            claimMap["http://wso2.org/claims/username"] = "PRIMARY/" + fedUser.remoteClaims.username;
+                            // getUniqueUserWithClaimValues(<claims to match the user>, <tenant domain>)
+                            var storedLocalUser = getUniqueUserWithClaimValues(claimMap, context);
+                            if (storedLocalUser !== null) {
+                                // Do the account linking
+                                doAssociationWithLocalUser(fedUser, storedLocalUser.username, storedLocalUser.tenantDomain, storedLocalUser.userStoreDomain);
+                            }
+                        }
+                    }
+                }
+            });
+        };
+    steps:
+        - id: 1
+          options:
+            - authenticator: OpenIDConnectAuthenticator
+              idp: Asgardeo Platform IDP
+    subjectStepId: 1
+    type: USER_DEFINED
+claimConfiguration:
+    claimMappings:
+        - applicationClaim: http://wso2.org/claims/emailaddress
+          localClaim:
+            uri: http://wso2.org/claims/emailaddress
+        - applicationClaim: http://wso2.org/claims/displayName
+          localClaim:
+            uri: http://wso2.org/claims/displayName
+        - applicationClaim: http://wso2.org/claims/username
+          localClaim:
+            uri: http://wso2.org/claims/username
+        - applicationClaim: http://wso2.org/claims/url
+          localClaim:
+            uri: http://wso2.org/claims/url
+    dialect: LOCAL
+    requestedClaims:
+        - claim:
+            uri: http://wso2.org/claims/emailaddress
+          mandatory: false
+        - claim:
+            uri: http://wso2.org/claims/displayName
+          mandatory: false
+        - claim:
+            uri: http://wso2.org/claims/username
+          mandatory: false
+        - claim:
+            uri: http://wso2.org/claims/url
+          mandatory: false
+    role:
+        claim:
+            uri: http://wso2.org/claims/role
+        includeUserDomain: true
+    subject:
+        claim:
+            uri: http://wso2.org/claims/userid
+        includeTenantDomain: true
+        includeUserDomain: true
+        mappedLocalSubjectMandatory: false
+        useMappedLocalSubject: true
+clientId: CONSOLE
+description: This is the console application.
+enhancedOrgAuthenticationEnabled: false
+id: d714a794-db03-47ab-a762-0cf0abd33060
+inboundProtocolConfiguration:
+    oidc:
+        _type: oidc
+        accessToken:
+            accessTokenAttributes: []
+            applicationAccessTokenExpiryInSeconds: 3600
+            bindingType: cookie
+            revokeTokensWhenIDPSessionTerminated: true
+            type: Default
+            userAccessTokenExpiryInSeconds: 3600
+            validateTokenBinding: true
+        allowedOrigins: []
+        callbackURLs:
+            - regexp=(https://console.asgardeo.io/t/(.*)/app(\?fidp=PlatformIDP)?$|https://console.asgardeo.io/t/(.*)/o/(.*)/app(\?fidp=PlatformIDP)?$)
+        cibaAuthenticationRequest:
+            allowFederatedUsers: false
+            authReqExpiryTime: 0
+            notificationChannels: []
+            skipUserValidation: false
+        clientAuthentication: {}
+        clientId: CONSOLE
+        clientSecret: '********'
+        grantTypes:
+            - authorization_code
+            - refresh_token
+            - account_switch
+            - organization_switch
+        hybridFlow:
+            enable: false
+            responseType: "null"
+        idToken:
+            audience: []
+            encryption:
+                algorithm: ""
+                enabled: false
+                method: ""
+            expiryInSeconds: 3600
+        isFAPIApplication: false
+        logout: {}
+        pkce:
+            mandatory: true
+            supportPlainTransformAlgorithm: false
+        publicClient: true
+        pushAuthorizationRequest:
+            requirePushAuthorizationRequest: false
+        refreshToken:
+            expiryInSeconds: 86400
+            extendRenewedRefreshTokenExpiryTime: true
+            gracefulRefreshTokenReuseLimit: 1
+            gracefulRefreshTokenRotationEnabled: false
+            gracefulRefreshTokenRotationValidityPeriod: 30
+            renewRefreshToken: false
+        requestObject:
+            encryption:
+                algorithm: ""
+                method: ""
+        scopeValidators: []
+        state: ACTIVE
+        subject:
+            subjectType: public
+        subjectToken:
+            applicationSubjectTokenExpiryInSeconds: 180
+            enable: false
+        validateRequestObjectSignature: false
+isManagementApp: false
+issuer: ""
+name: Console
+provisioningConfigurations:
+    outboundProvisioningIdps: []
+realm: ""
+templateId: ""
+templateVersion: ""

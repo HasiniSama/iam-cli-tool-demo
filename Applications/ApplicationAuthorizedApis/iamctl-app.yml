@@ -1,0 +1,30 @@
+- authorizedScopes:
+    - displayName: View application client secret
+      id: 01523E36-D6B4-49A4-9FD6-C3EDAEAA7EC4
+      name: internal_application_mgt_client_secret_view
+    - displayName: Update authorized internal APIs of an Application
+      id: 0AA799EC-6FC2-41A9-9BD4-6FF711226D7D
+      name: internal_application_internal_api_update
+    - displayName: Create Application
+      id: 29aa14c2-57f9-495a-90c5-260f28305b3e
+      name: internal_application_mgt_create
+    - displayName: Delete Application
+      id: 31474443-c498-4e0d-b76b-738973546979
+      name: internal_application_mgt_delete
+    - displayName: Update Application
+      id: 92e95601-d88d-49b0-a3a8-c478d17d841f
+      name: internal_application_mgt_update
+    - displayName: Update authorized business APIs of an Application
+      id: A1351066-0A4A-433E-AA13-128D55CFDF67
+      name: internal_application_business_api_update
+    - displayName: View Application
+      id: f843052a-a160-425b-8305-022a38157fe2
+      name: internal_application_mgt_view
+    - displayName: Regenerate Application Secret
+      id: FF17D59C-3B25-4E9C-BE25-965466CD32DB
+      name: internal_application_mgt_client_secret_create
+  displayName: Application Management API
+  id: 3b77029a-cb9a-48e1-9b5e-1dcb6b464e2a
+  identifier: /api/server/v1/applications
+  policyId: RBAC
+  type: TENANT

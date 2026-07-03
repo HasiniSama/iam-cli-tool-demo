@@ -1,0 +1,117 @@
+advancedConfigurations:
+    additionalSpProperties:
+        - displayName: Is B2B Self Service Application
+          name: isB2BSelfServiceApp
+          value: "false"
+    attestationMetaData:
+        androidPackageName: ""
+        appleAppId: ""
+        enableClientAttestation: false
+    discoverableByEndUsers: false
+    enableAPIBasedAuthentication: false
+    enableAuthorization: false
+    fragment: false
+    returnAuthenticatedIdpList: false
+    saas: false
+    skipLoginConsent: false
+    skipLogoutConsent: false
+    useExternalConsentPage: false
+applicationEnabled: true
+applicationVersion: v3.0.0
+associatedRoles:
+    allowedAudience: APPLICATION
+authenticationSequence:
+    attributeStepId: 1
+    requestPathAuthenticators: []
+    steps:
+        - id: 1
+          options:
+            - authenticator: BasicAuthenticator
+              idp: LOCAL
+    subjectStepId: 1
+    type: DEFAULT
+claimConfiguration:
+    claimMappings: []
+    dialect: LOCAL
+    requestedClaims: []
+    role:
+        claim:
+            uri: http://wso2.org/claims/role
+        includeUserDomain: true
+    subject:
+        claim:
+            uri: http://wso2.org/claims/userid
+        includeTenantDomain: false
+        includeUserDomain: false
+        mappedLocalSubjectMandatory: false
+        useMappedLocalSubject: false
+clientId: tbLWp8HY6Jq2eQu0fAC6aagbnnEa
+enhancedOrgAuthenticationEnabled: false
+id: afe56241-5191-49c2-8aad-09a34ca7ec6f
+inboundProtocolConfiguration:
+    oidc:
+        _type: oidc
+        accessToken:
+            accessTokenAttributes: []
+            applicationAccessTokenExpiryInSeconds: 3600
+            revokeTokensWhenIDPSessionTerminated: false
+            type: Default
+            userAccessTokenExpiryInSeconds: 3600
+            validateTokenBinding: false
+        allowedOrigins: []
+        callbackURLs: []
+        cibaAuthenticationRequest:
+            allowFederatedUsers: false
+            authReqExpiryTime: 0
+            notificationChannels: []
+            skipUserValidation: false
+        clientAuthentication: {}
+        clientId: tbLWp8HY6Jq2eQu0fAC6aagbnnEa
+        clientSecret: '********'
+        grantTypes:
+            - client_credentials
+        hybridFlow:
+            enable: false
+            responseType: "null"
+        idToken:
+            audience: []
+            encryption:
+                algorithm: ""
+                enabled: false
+                method: ""
+            expiryInSeconds: 3600
+        isFAPIApplication: false
+        logout: {}
+        pkce:
+            mandatory: false
+            supportPlainTransformAlgorithm: false
+        publicClient: false
+        pushAuthorizationRequest:
+            requirePushAuthorizationRequest: false
+        refreshToken:
+            expiryInSeconds: 86400
+            extendRenewedRefreshTokenExpiryTime: true
+            gracefulRefreshTokenReuseLimit: 1
+            gracefulRefreshTokenRotationEnabled: false
+            gracefulRefreshTokenRotationValidityPeriod: 30
+            renewRefreshToken: false
+        requestObject:
+            encryption:
+                algorithm: ""
+                method: ""
+        scopeValidators: []
+        state: ACTIVE
+        subject:
+            subjectType: public
+        subjectToken:
+            applicationSubjectTokenExpiryInSeconds: 180
+            enable: false
+        validateRequestObjectSignature: false
+isManagementApp: false
+issuer: ""
+name: iamctl-app
+provisioningConfigurations:
+    outboundProvisioningIdps: []
+realm: ""
+templateId: m2m-application
+templateVersion: ""

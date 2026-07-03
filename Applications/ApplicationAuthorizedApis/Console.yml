@@ -1,0 +1,3099 @@
+- authorizedScopes:
+    - displayName: Offline invite link
+      id: 5d42115c-59c0-420f-8c9e-c56de46a8cbf
+      name: internal_offline_invite
+  displayName: Offline User Onboard API
+  id: 42f3ed8c-449d-4365-9cc7-a4bb370a608f
+  identifier: /api/users/v1/offline-invite-link/
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Role
+      id: 163825fd-a392-4e78-97ec-e3198d830d28
+      name: internal_org_role_mgt_delete
+    - displayName: Update Permissions of Role
+      id: 5A5E8046-0573-4269-A374-8DD47E7C98B3
+      name: internal_org_role_mgt_permissions_update
+    - displayName: Update Groups of Role
+      id: B400780D-8268-41E3-873B-C926A86168D6
+      name: internal_org_role_mgt_groups_update
+    - displayName: Create Role
+      id: beebc98a-dfa2-4475-8b83-d65f4a170fe5
+      name: internal_org_role_mgt_create
+    - displayName: Update Role
+      id: e8a8c8eb-1e9a-4fc1-946b-ec6b7d20009b
+      name: internal_org_role_mgt_update
+    - displayName: Update Users of Role
+      id: F44CB0CF-028C-4201-BA77-54E2F8AC0C69
+      name: internal_org_role_mgt_users_update
+    - displayName: View Role
+      id: fd0b6d82-3e89-471a-a02f-8d57b0a8a576
+      name: internal_org_role_mgt_view
+  displayName: SCIM2 Roles V1/V2 API
+  id: 77e7ee21-da02-409e-bf8a-28f3bb186814
+  identifier: /o/scim2/Roles
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete Sessions
+      id: 3bef3d55-b1cf-4132-bb1a-bb2c7c9cda1f
+      name: internal_session_delete
+    - displayName: View Sessions
+      id: 597b2efc-5e21-4e8e-b309-733a2a4b4fea
+      name: internal_session_view
+  displayName: Session Management API
+  id: da8fd40c-e8c4-4190-b712-60254f1945ac
+  identifier: /api/users/v1/(.*)sessions
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Certificate Feature
+      id: 11dd2999-564f-4686-b201-e3c9f6e9ddb6
+      name: console:certificates
+    - displayName: Certificate View Feature
+      id: 3047E595-4360-41A6-A7E0-D48DE4813144
+      name: console:certificates_view
+    - displayName: Certificate Edit Feature
+      id: 3AA5E28C-C834-42C7-A989-E586857D5F21
+      name: console:certificates_edit
+  displayName: Certificate Management Feature
+  id: eeea7c46-30fb-4aee-8734-0ab5cfefbab6
+  identifier: console:certificates
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Identity Provider Feature
+      id: 5c48b7d0-bac9-4e66-bff1-ef2138775b40
+      name: console:org:idps
+    - displayName: Identity Provider Edit Feature
+      id: BB7C3FB9-70A9-4E79-BC52-7518DB707AD1
+      name: console:org:idps_edit
+    - displayName: Identity Provider View Feature
+      id: E34BD04B-AF68-4456-BC3E-87126F983455
+      name: console:org:idps_view
+  displayName: Identity Provider Management Feature
+  id: 176040f5-9750-4b9f-a34f-c3645cbbba4c
+  identifier: console:org:idps
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Identity Provider View Feature
+      id: 7C139DA4-BE82-439A-9B75-798476946D67
+      name: console:idps_view
+    - displayName: Identity Provider Feature
+      id: bddfefcc-4bc5-46c7-822e-e96e3756b0dd
+      name: console:idps
+    - displayName: Identity Provider Edit Feature
+      id: DBA3D5B6-D8D6-4375-A772-1FFA6798F413
+      name: console:idps_edit
+  displayName: Identity Provider Management Feature
+  id: 6a787896-12d8-4ea0-961e-a90856e33a05
+  identifier: console:idps
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Workflow Approval Feature
+      id: c7f58080-1ab8-4352-a9b7-af2ff37b8cda
+      name: console:workflowApprovals
+  displayName: Workflow Approval Management Feature
+  id: 5476ef8e-3836-4b56-b0a6-ceee65d0c407
+  identifier: console:workflowApprovals
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Login And Registration Feature
+      id: 28d5ab9c-0c0f-4524-bf19-059810fc48af
+      name: console:loginAndRegistration
+    - displayName: Login And Registration View Feature
+      id: 5C4801FE-54B0-4DC0-8FDF-023DA98263BB
+      name: console:loginAndRegistration_view
+    - displayName: Login And Registration Edit Feature
+      id: 641AEBC2-1B56-4865-80F8-BCC183CDE34C
+      name: console:loginAndRegistration_edit
+  displayName: Login And Registration Management Feature
+  id: 0987966c-43ea-4949-8aac-324f90748e1b
+  identifier: console:loginAndRegistration
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: View Identity Governance
+      id: a82d4710-8622-4cc2-9033-fa1722a43bf2
+      name: internal_org_governance_view
+    - displayName: Update Identity Governance
+      id: c5044bde-19a4-4691-91c2-a258101c3e0b
+      name: internal_org_governance_update
+  displayName: Identity Governance Management API
+  id: 61305dc7-a182-44cb-b7ba-7e9ec0dd9f39
+  identifier: /o/api/server/v1/identity-governance
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Bulk User
+      id: 062708cc-6e75-42e0-be73-2b4f472ce840
+      name: internal_bulk_user_update
+    - displayName: Update Bulk Group
+      id: 1b81cfbd-48a3-459d-9389-1b5b4eabdb6a
+      name: internal_bulk_group_update
+    - displayName: Create Bulk Group
+      id: 1e4f2b10-d230-4fc0-8bc0-6140316d794b
+      name: internal_bulk_group_create
+    - displayName: Create Bulk Resource
+      id: 21f6be0b-0cc5-4949-84ee-81b5695d3ab1
+      name: internal_bulk_resource_create
+    - displayName: Create Bulk Role
+      id: 583577de-830f-42ba-970b-5149da5fc98e
+      name: internal_bulk_role_create
+    - displayName: Delete Bulk Group
+      id: 5da2b63a-5c41-4625-9cea-c4ed577863d5
+      name: internal_bulk_group_delete
+    - displayName: Update Bulk Role
+      id: 6f5615c7-9c74-439a-a5f6-0d51fce3247e
+      name: internal_bulk_role_update
+    - displayName: Delete Bulk Role
+      id: 9fcf8b39-4e74-4eb2-896e-276bb96cc453
+      name: internal_bulk_role_delete
+    - displayName: Create Bulk User
+      id: ef75bba0-7d37-4833-9e3c-0140a2506ae1
+      name: internal_bulk_user_create
+    - displayName: Delete Bulk User
+      id: f800e7cf-bd3d-474c-9295-7cba7c094108
+      name: internal_bulk_user_delete
+  displayName: SCIM2 Bulk API
+  id: 6ab9a19b-d531-4cdd-bcad-4c68ed18bac7
+  identifier: /scim2/Bulk
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Event configuration update
+      id: 02a2f9cb-bc3d-437f-be15-4321c28a66c1
+      name: internal_event_config_update
+    - displayName: Event configuration view
+      id: 456cec05-7d19-4501-aa3b-0de8953330cb
+      name: internal_event_config_view
+  displayName: Event Configuration API
+  id: 8df0af38-9442-4bee-8daf-f86e407ab315
+  identifier: /api/event-configurations/v1/events
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update User
+      id: 2c3ac59c-5d6e-4fbd-b5b1-9ae93f4032b3
+      name: internal_org_user_mgt_update
+    - displayName: Delete User
+      id: 5b8aa5f8-634f-4424-8cea-47051f2dda45
+      name: internal_org_user_mgt_delete
+    - displayName: List User
+      id: 7b9647ea-4002-49e4-9afc-b52b9bc9275a
+      name: internal_org_user_mgt_list
+    - displayName: Create User
+      id: ba8c451c-e915-443f-a898-9688a2b5ca28
+      name: internal_org_user_mgt_create
+    - displayName: View User
+      id: d78ea41d-26f3-4b29-a613-e333bcd99713
+      name: internal_org_user_mgt_view
+  displayName: SCIM2 Users API
+  id: 4348df7c-91b6-4b87-8b8c-d4da1b129db0
+  identifier: /o/scim2/Users
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: User Feature
+      id: 068dd1f1-8d0d-4065-a1fc-a700c9d60fca
+      name: console:org:users
+    - displayName: User View Feature
+      id: 60F68F99-BAF7-4D11-9E64-2E786CD10442
+      name: console:org:users_view
+    - displayName: User Edit Feature
+      id: CDCC2B28-2C8F-4331-B06B-E8C36FA391C5
+      name: console:org:users_edit
+  displayName: User Management Feature
+  id: f4966393-1e80-47e8-8d6d-c1838c31aaf6
+  identifier: console:org:users
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: OIDC Scope Edit Feature
+      id: 187F2EED-CE99-4316-9FA3-97309136BAB2
+      name: console:scopes:oidc_edit
+    - displayName: OIDC Scope View Feature
+      id: 85491188-FA81-4F9C-A346-370BE9121371
+      name: console:scopes:oidc_view
+    - displayName: OIDC Scope Feature
+      id: d1adc5a7-10c0-4fa6-8e0b-e9cdeb8e9f20
+      name: console:scopes:oidc
+  displayName: OIDC Scope Management Feature
+  id: dcccf2f5-009d-4967-ac2b-6010e09d513a
+  identifier: console:scopes:oidc
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update OIDC Scopes
+      id: 19f113e8-8608-4f83-a4a9-01b5aacf2b58
+      name: internal_oidc_scope_mgt_update
+    - displayName: Delete OIDC Scopes
+      id: 2b925c12-06b1-4719-9f28-5358fa6f9aee
+      name: internal_oidc_scope_mgt_delete
+    - displayName: Create OIDC Scopes
+      id: 49ff4032-1bc5-43a0-9753-397acdd2952b
+      name: internal_oidc_scope_mgt_create
+    - displayName: View OIDC Scopes
+      id: d4fe93fa-81f0-4df6-ada0-cefb91e4b61e
+      name: internal_oidc_scope_mgt_view
+  displayName: OIDC Scope Management API
+  id: 270137f8-f2f4-42ec-81d6-1edb4bd80bf2
+  identifier: /api/server/v1/oidc/scopes
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Branding Policy URLs
+      id: 1F1A9975-E06B-4D0D-B8D8-8A8054F21BE7
+      name: internal_org_branding_preference_policy_update
+    - displayName: Update Branding Preference
+      id: 973d2690-1422-4afb-b491-7b86ea4a696a
+      name: internal_org_branding_preference_update
+  displayName: Branding Preference Management API
+  id: f25dedd9-8b45-42ff-9d9f-b4947b13f06a
+  identifier: /o/api/server/v1/branding-preference
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete Config
+      id: 3b9c7e00-af42-4f7b-b659-1b268e7ea158
+      name: internal_config_delete
+    - displayName: View Config
+      id: 46e9862d-dd90-4b78-aa46-349247f7d4e0
+      name: internal_config_view
+    - displayName: Create Config
+      id: b1e4e6f9-96ca-49f1-9641-b39549af896e
+      name: internal_config_create
+    - displayName: Update Config
+      id: c0bca877-fe24-459c-ae4f-d02f7e53469d
+      name: internal_config_update
+  displayName: Server Configuration Management API
+  id: 2b8b4da0-ff00-4be0-b92f-523958fd7f01
+  identifier: /api/server/v1/configs
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: User Feature
+      id: 03734289-b0ef-47d8-ae24-97ebc5bab382
+      name: console:users
+    - displayName: User Edit Feature
+      id: 150AD108-F80A-40EF-BF0C-88F8F995ED4D
+      name: console:users_edit
+    - displayName: User View Feature
+      id: 51A67A85-FD88-4B50-AA88-662EC340CB58
+      name: console:users_view
+  displayName: User Management Feature
+  id: b0db13b4-1dae-4789-8952-784f8d98379e
+  identifier: console:users
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Role Edit Feature
+      id: 6DA2EDCF-4337-4BDD-A4FC-82DB0EF7B191
+      name: console:roles_edit
+    - displayName: Role Feature
+      id: 761185d7-ded4-4d7b-824e-15961671dfd9
+      name: console:roles
+    - displayName: Role View Feature
+      id: EEC34343-9FA9-4912-8BB3-027C33B2878F
+      name: console:roles_view
+  displayName: Role Management Feature
+  id: d4b8a2d1-1e64-448b-bb06-45c71aa83af3
+  identifier: console:roles
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Diagnostic log view
+      id: daf39319-d4b4-41a1-be16-af027916dd3d
+      name: internal_diagnostic_log_view
+  displayName: Diagnostic Log Management API
+  id: 7af71728-2126-499a-a297-d8adba4ed0c6
+  identifier: /api/asgardeo/v2/logs/diagnostics
+  policyId: RBAC
+  type: CONSOLE
+- authorizedScopes:
+    - displayName: Add Consent
+      id: 099ffc73-2b8f-49df-9985-902a2d0bf00b
+      name: internal_consent_mgt_add
+    - displayName: Delete Consent
+      id: 9e5bd849-8045-4366-805a-1ff9b1ed8d67
+      name: internal_consent_mgt_delete
+  displayName: Consent Management API
+  id: bea8dbc6-fc34-410c-a546-1f75c723a480
+  identifier: /api/identity/consent-mgt/v1.0/consents
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Application Feature
+      id: 0ed028ab-9946-471b-bc4d-ec061da69acc
+      name: console:applications
+    - displayName: Application Edit Feature
+      id: 8314FCBB-8917-4DBD-85EA-A0651459168A
+      name: console:applications_edit
+    - displayName: Application View Feature
+      id: C29A284B-80D2-41D5-8755-6E7C9067995F
+      name: console:applications_view
+  displayName: Application Management Feature
+  id: ed1ec0e2-f2a7-41b6-82ad-fa1ed9e1a69b
+  identifier: console:applications
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Delete User Associations
+      id: 38d402fb-35dd-48c2-bb59-5a7ca232d482
+      name: internal_user_association_delete
+    - displayName: View User Associations
+      id: 4ba8c21d-87be-412e-a56d-5e65d10d67db
+      name: internal_user_association_view
+    - displayName: Create User Associations
+      id: d5e58816-8f35-4679-b916-dde2b1abaf77
+      name: internal_user_association_create
+  displayName: Association Management API
+  id: 4c8be49a-ecc7-4c6e-bd5a-45e62e9d438b
+  identifier: /api/users/v1/(.*)/(.*)associations
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Organization Edit Feature
+      id: 4D74F71D-444D-4B93-9C85-E15995E7C4E1
+      name: console:org:organizations_edit
+    - displayName: Organization View Feature
+      id: 9B12364E-3655-4CF2-8391-59C6DF00052C
+      name: console:org:organizations_view
+    - displayName: Organization Feature
+      id: b05ff61c-04d8-455c-809a-bc78fe7a629c
+      name: console:org:organizations
+  displayName: Organization Management Feature
+  id: 69421525-526d-4a02-9d7f-442386960fc8
+  identifier: console:org:organizations
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Create Bulk Role
+      id: 4680ab56-b46c-40ff-82ea-46891e3b2346
+      name: internal_org_bulk_role_create
+    - displayName: Create Bulk Group
+      id: 7e235baa-1175-4bbb-8f03-5c5512180a75
+      name: internal_org_bulk_group_create
+    - displayName: Create Bulk Resource
+      id: 8ba9c19f-bcf0-4a14-8668-a24cd0ae5056
+      name: internal_org_bulk_resource_create
+    - displayName: Update Bulk Role
+      id: 9b089b90-85de-4d45-9231-c7939a263386
+      name: internal_org_bulk_role_update
+    - displayName: Update Bulk User
+      id: c4719818-6a53-4f69-8150-31c20859c650
+      name: internal_org_bulk_user_update
+    - displayName: Delete Bulk User
+      id: c48a5c26-b34d-4a77-adfe-a3a5939c3846
+      name: internal_org_bulk_user_delete
+    - displayName: Create Bulk User
+      id: cfc537c1-b682-41b3-8c9e-08a00e2aafec
+      name: internal_org_bulk_user_create
+    - displayName: Update Bulk Group
+      id: d0f60d49-b8d9-435e-9936-20583c98d29d
+      name: internal_org_bulk_group_update
+    - displayName: Delete Bulk Role
+      id: dd5319e5-48ae-4c9b-b901-a6ed71e7208a
+      name: internal_org_bulk_role_delete
+    - displayName: Delete Bulk Group
+      id: df88cb03-e41b-4fd4-a7c5-2a93f5dd5ec1
+      name: internal_org_bulk_group_delete
+  displayName: SCIM2 Bulk API
+  id: 87998c65-c793-46df-822e-154e3672cd36
+  identifier: /o/scim2/Bulk
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Create Recovery
+      id: 2e46ba38-765c-4dd1-b7f9-e0072ab7b503
+      name: internal_recovery_create
+    - displayName: View Recovery
+      id: a35282ee-3d5d-4ac4-b5dd-568be629d26c
+      name: internal_recovery_view
+  displayName: Identity Recovery API
+  id: a63cc463-e69b-4ea2-9739-2584c9a96d8c
+  identifier: /api/identity/recovery
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View User Code
+      id: 46fb4874-366e-479f-aa12-1467d8f2317d
+      name: internal_user_code_mgt_view
+    - displayName: Create User Code
+      id: d520dcf7-f4ed-4760-99ec-834fc1c21602
+      name: internal_user_code_mgt_create
+    - displayName: Update User Code
+      id: db023ea1-6ef9-496a-bdda-af368f46feb8
+      name: internal_user_code_mgt_update
+    - displayName: Delete User Code
+      id: e2cb56e8-2f4e-4a96-863f-4af56c52bd0a
+      name: internal_user_code_mgt_delete
+  displayName: User Code Management API
+  id: 1400a9d9-c02a-4909-b1d4-5aa94a64e5b6
+  identifier: /api/identity/user/v1.0/(.*)-code
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View CORS Origins
+      id: 94041c57-a602-4768-aee7-951b18994cf8
+      name: internal_cors_origins_view
+  displayName: CORS Management API
+  id: 277a5b08-acdc-4d90-b472-91cf6d730acf
+  identifier: /api/server/v1/cors/origins
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Event Publishing Feature
+      id: 63aeed57-286d-4629-b48a-de114bcfe5b1
+      name: console:eventPublishing
+  displayName: Event Publishing Management Feature
+  id: 8334a30d-dfdb-46ab-9e6d-67dcb2787562
+  identifier: console:eventPublishing
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Create DCR
+      id: 2f5bb139-aa4a-42ec-8ab3-e6a0fd6a5868
+      name: internal_dcr_create
+    - displayName: Delete DCR
+      id: d52aab4c-e7a3-4ec7-a6e3-a0c88e05de4c
+      name: internal_dcr_delete
+    - displayName: View DCR
+      id: e606ac19-9b8c-48e0-a638-711b69b4a21a
+      name: internal_dcr_view
+    - displayName: Update DCR
+      id: f22b9421-6e5f-48e6-9b25-302b8539d751
+      name: internal_dcr_update
+  displayName: OAuth DCR API
+  id: 172f61e9-b5b2-4d45-99c8-d97666691f26
+  identifier: /api/identity/oauth2/dcr/v1.1/register
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Shared Application
+      id: 8c0472e0-5b24-4739-9ff5-640618efa150
+      name: internal_shared_application_create
+    - displayName: View Shared Application
+      id: 971be1dc-486a-4bd7-91ec-09349f678737
+      name: internal_shared_application_view
+    - displayName: Delete Shared Application
+      id: fe7601b2-bc47-4147-8167-55be5899abd1
+      name: internal_shared_application_delete
+  displayName: Shared Application Management API
+  id: 6af12a2a-645e-4ae4-b760-d28673f83232
+  identifier: /api/server/v1/applications/share
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Notification Senders
+      id: 140b08a0-4ce0-419c-88eb-ba3442fc69e8
+      name: internal_org_notification_senders_delete
+    - displayName: Create Notification Senders
+      id: 5615f358-3465-49fc-ba4c-e7cd50985085
+      name: internal_org_notification_senders_create
+    - displayName: View Notification Senders
+      id: 5b4197d7-3f2d-4b83-bbe1-5fae509cff1a
+      name: internal_org_notification_senders_view
+    - displayName: Update Notification Senders
+      id: f183c921-55e5-4ddb-b145-e0ce5cd45201
+      name: internal_org_notification_senders_update
+  displayName: Notification Sender Management API
+  id: 26ee2fd4-e889-4e5b-a553-44ee99bc9ec3
+  identifier: /o/api/server/v1/notification-senders
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete API Resource
+      id: 3adc7023-ef50-4510-8a06-4e4cad5c44c0
+      name: internal_api_resource_delete
+    - displayName: Update API Resource
+      id: 6bcae334-e962-4ab3-a105-bb3e2eac9616
+      name: internal_api_resource_update
+    - displayName: Create API Resource
+      id: 7573871c-cd4d-4645-b998-ee33cf28c390
+      name: internal_api_resource_create
+    - displayName: View API Resource
+      id: f496f3ca-7f5d-483a-9f27-7320fa069e1e
+      name: internal_api_resource_view
+  displayName: API Resource Management API
+  id: 820ccb23-d5a4-41f5-bb8e-ce8e26b5b1ae
+  identifier: /api/server/v1/api-resources
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: API Resource Edit Feature
+      id: 11C27E26-A31F-4E35-BFE6-0421E9DD3B5F
+      name: console:apiResources_edit
+    - displayName: API Resource Feature
+      id: d17c3019-d67a-45d2-a3f5-db661dc79e80
+      name: console:apiResources
+    - displayName: API Resource View Feature
+      id: FD4A3EDB-5EE1-4519-BA54-8CD74AC1BB72
+      name: console:apiResources_view
+  displayName: API Resource Management Feature
+  id: ddfb327a-8669-4b90-bb7f-560d6bca1014
+  identifier: console:apiResources
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: View Authenticators
+      id: 7f4dd1e1-ed7a-4653-a5b1-4617eda27763
+      name: internal_org_authenticator_view
+  displayName: Authenticators Management API
+  id: 0a714568-72d8-46ba-bdce-9b01873318f4
+  identifier: /o/api/server/v1/authenticators
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Create Organizations
+      id: 0bb4ef51-9f85-4202-8d17-f787ef4264b8
+      name: internal_organization_create
+    - displayName: View Organizations
+      id: 814a2f66-d8c2-4577-8770-db365cce0dad
+      name: internal_organization_view
+    - displayName: Update Organizations
+      id: 84492d62-51af-4314-a909-5a6e3d84c94a
+      name: internal_organization_update
+    - displayName: Delete Organizations
+      id: 98f67a04-2697-4e83-85e1-1d486bd8ed58
+      name: internal_organization_delete
+  displayName: Organization Management API
+  id: 17598b0a-c5b6-45ae-9fdd-7db9fe5ce3f4
+  identifier: /api/server/v1/organizations
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Sessions
+      id: 9abb83cf-d578-48d5-987a-22fcd4ee1279
+      name: internal_org_session_delete
+    - displayName: View Sessions
+      id: fafbbca2-d5bb-45df-92bd-b042fa727c9c
+      name: internal_org_session_view
+  displayName: Session Management API
+  id: 34660f90-c47a-4801-b8d2-161e45c4c935
+  identifier: /o/api/users/v1/(.*)sessions
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: User views of Store View Feature
+      id: 149D20E8-D011-4BF2-BB20-F062830C8B7B
+      name: console:userstores_view
+    - displayName: User Store Edit Feature
+      id: 4F371966-A20B-47B6-AEE0-4E8CC4519EE3
+      name: console:userstores_edit
+    - displayName: User Store Feature
+      id: 8337a984-155a-407c-8353-55f422377a34
+      name: console:userstores
+  displayName: User Store Management Feature
+  id: 9a53444f-9a74-4a18-b57f-1f7ee80fe675
+  identifier: console:userstores
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Create Role
+      id: 48d6a35f-473a-41da-9839-62d1fbe6dfd0
+      name: internal_role_mgt_create
+    - displayName: Update Users of Role
+      id: 4CE1E12A-93FD-4577-A8E2-20F8EE68B8E7
+      name: internal_role_mgt_users_update
+    - displayName: Update Groups of Role
+      id: 65CE0025-12E0-41F4-A511-88F77EFD0314
+      name: internal_role_mgt_groups_update
+    - displayName: Update Permissions of Role
+      id: 7EA90E18-F823-4F4E-AC78-BDECDADF736A
+      name: internal_role_mgt_permissions_update
+    - displayName: Update Role
+      id: 9f032e56-ad1a-418a-8345-11cfea7fe5f0
+      name: internal_role_mgt_update
+    - displayName: View Role
+      id: a800f4ee-b040-421c-9ce1-a12e572426ae
+      name: internal_role_mgt_view
+    - displayName: Delete Role
+      id: b9ffabff-89a9-442f-890b-e070c68f4a4c
+      name: internal_role_mgt_delete
+  displayName: SCIM2 Roles V1/V2 API
+  id: 66f0dfb3-c99b-40b6-bc88-d6dd1d1d896f
+  identifier: /scim2/Roles
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Claim
+      id: 3152e2e7-3978-4eb1-88bc-15d667bfc24d
+      name: internal_org_claim_meta_update
+    - displayName: View Claim
+      id: 46cbf46d-274e-4348-a8b3-0b80de9de58c
+      name: internal_org_claim_meta_view
+  displayName: Claim Management API
+  id: 61231249-15e6-4793-a705-d3b39aef77d3
+  identifier: /o/api/server/v1/claim-dialects
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Audit log view
+      id: f6dc55ab-728b-4a46-b5f7-d789d7b605dc
+      name: internal_audit_log_view
+  displayName: Audit Log Management API
+  id: f45005aa-930b-467d-9726-9c549f9e63d2
+  identifier: /api/asgardeo/v2/logs/audit
+  policyId: RBAC
+  type: CONSOLE
+- authorizedScopes:
+    - displayName: Resident Application Outbound Provisioning View Feature
+      id: 27C63C02-1E6B-4301-8092-0F91D14F7C6D
+      name: console:residentOutboundProvisioning_view
+    - displayName: Resident Application Outbound Provisioning Feature
+      id: b04f24a3-d3c9-4228-a097-9fb12e9cd439
+      name: console:residentOutboundProvisioning
+    - displayName: Resident Application Outbound Provisioning Edit Feature
+      id: D0ABA0B7-7448-4BEB-A252-0BB4DA1FF97B
+      name: console:residentOutboundProvisioning_edit
+  displayName: Resident Application Outbound Provisioning Configuration Feature
+  id: b0f8259a-71c5-4f83-9464-218152edc396
+  identifier: console:residentOutboundProvisioning
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Email Template Edit Feature
+      id: 0CA4D20C-5CF1-4165-9BA9-12727646C14A
+      name: console:org:emailTemplates_edit
+    - displayName: Email Template Feature
+      id: 4c3301c1-20be-44fa-a3fd-ea855305ae9c
+      name: console:org:emailTemplates
+    - displayName: Email Template View Feature
+      id: 6B4BC7DD-A001-47A3-8470-9A33F58871A4
+      name: console:org:emailTemplates_view
+  displayName: Email Template Management Feature
+  id: db37475b-0755-4e19-a332-245b69e7317d
+  identifier: console:org:emailTemplates
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: View Organization Discovery
+      id: 3ed405d0-c491-4c6a-abb8-8616129dca40
+      name: internal_organization_discovery_view
+    - displayName: Delete Organization Discovery
+      id: a18c7fce-2c3c-49ea-a115-def58555ef73
+      name: internal_organization_discovery_delete
+    - displayName: Update Organization Discovery
+      id: a3d25c99-f0e8-4c49-9b12-d929ffed7bd8
+      name: internal_organization_discovery_update
+  displayName: Organization Discovery API
+  id: 45f5417a-10ce-415f-af52-73ab6924c346
+  identifier: /api/server/v1/organizations/discovery
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Organization Discovery
+      id: cf351813-e33e-4092-82c3-fef38c9d2a53
+      name: internal_org_organization_discovery_view
+  displayName: Organization Discovery API
+  id: 442e2242-2ace-444c-b5e9-e7f2289691b3
+  identifier: /o/api/server/v1/organizations/discovery
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Identity Verification Provider Edit Feature
+      id: 4F90699E-6D28-4735-A83B-49747F5E8079
+      name: console:idvps_edit
+    - displayName: Identity Verification Provider Feature
+      id: 91c2b472-5236-43f9-8f5b-628556a31732
+      name: console:idvps
+    - displayName: Identity Verification Provider View Feature
+      id: 967BDAB2-3B28-48FF-9D84-C6D069B3C67C
+      name: console:idvps_view
+  displayName: Identity Verification Provider Management Feature
+  id: d81ff840-5c87-4e08-8ea6-cea4f0fc19e6
+  identifier: console:idvps
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Notification Senders
+      id: 09a89087-d6a4-4dfa-ac9a-5fc829d891b6
+      name: internal_notification_senders_update
+    - displayName: View Notification Senders
+      id: 2f7c4724-48f2-4c02-9493-ee5587264264
+      name: internal_notification_senders_view
+    - displayName: Create Notification Senders
+      id: 7e4d1226-6422-415f-a266-12910ae32ca6
+      name: internal_notification_senders_create
+    - displayName: Delete Notification Senders
+      id: e5c22f44-c96e-4b9c-88f2-7ceabc0f5787
+      name: internal_notification_senders_delete
+  displayName: Notification Sender Management API
+  id: 25291878-9fe2-40d8-b493-65b0aa2728ec
+  identifier: /api/server/v1/notification-senders
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Offline invite link
+      id: 6f33158e-5b9d-4101-b821-bd461fe7aec2
+      name: internal_org_offline_invite
+  displayName: Offline User Onboard API
+  id: 5f0d9e53-0d17-458e-a545-8e0cee0983ea
+  identifier: /o/api/users/v1/offline-invite-link/
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Getting Started Edit Feature
+      id: 5AC1069E-A839-45B9-A92E-F485EADB0D3D
+      name: console:org:home_edit
+    - displayName: Getting Started View Feature
+      id: 880DDE27-0F0F-4593-8427-09C0CB6CF641
+      name: console:org:home_view
+    - displayName: Getting Started Feature
+      id: 9aa2a79b-6d95-4af9-aa11-0daed934cbfb
+      name: console:org:home
+  displayName: Getting Started Feature
+  id: f2548bc1-ad7e-4e6a-9da0-f595e31650e8
+  identifier: console:org:home
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Create User
+      id: 0eccfe41-099b-44b1-a939-5a31ffc73d41
+      name: internal_user_mgt_create
+    - displayName: List Users
+      id: 327af183-c37a-4aad-a455-22dccdaa720e
+      name: internal_user_mgt_list
+    - displayName: View User
+      id: 3a01b5b2-2990-4821-a5b5-c472b32e23eb
+      name: internal_user_mgt_view
+    - displayName: Delete User
+      id: 81d44d4f-ddb3-4e0a-a1aa-39164e6e572e
+      name: internal_user_mgt_delete
+    - displayName: Update User
+      id: 9708a661-313b-41af-918f-5c0992c5074d
+      name: internal_user_mgt_update
+  displayName: SCIM2 Users API
+  id: 1f616716-f518-48a5-a497-5eb0e2200b4f
+  identifier: /scim2/Users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Notification Channel View Feature
+      id: 3DEC60F7-3327-4913-9955-EC4AA3F1D129
+      name: console:notificationChannels_view
+    - displayName: Notification Channel Edit Feature
+      id: 67435B74-CF6C-421C-A4D5-8460B43C534A
+      name: console:notificationChannels_edit
+    - displayName: Notification Channel Feature
+      id: aba21dd2-4157-4992-ab22-3c1b3feaa686
+      name: console:notificationChannels
+  displayName: Notification Channel Management Feature
+  id: 26280eaa-34e5-45da-81f0-ae8f2433060a
+  identifier: console:notificationChannels
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Getting Started View Feature
+      id: 15701301-DD59-43B6-8E2B-118BD6F1EA80
+      name: console:home_view
+    - displayName: Getting Started Edit Feature
+      id: CAB86918-7CB7-4172-9B27-EB2A0C40ED10
+      name: console:home_edit
+    - displayName: Getting Started Feature
+      id: e4e4a4d8-4646-4dd7-81ad-0dc98f3c345c
+      name: console:home
+  displayName: Getting Started Feature
+  id: 22c363c7-0928-44b0-983b-ed246d5cf513
+  identifier: console:home
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Attribute Feature
+      id: 6c2eba32-67de-497c-85ce-d6e5367dc443
+      name: console:attributes
+    - displayName: Attribute View Feature
+      id: 9588B357-06DA-41C6-B328-675A986FCBEA
+      name: console:attributes_view
+    - displayName: Attribute Edit Feature
+      id: C73986E8-B049-4304-8E72-E764DA624C89
+      name: console:attributes_edit
+  displayName: Attribute Management Feature
+  id: 21f13a7e-d925-4222-9bca-5dd419ea17ae
+  identifier: console:attributes
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Identity Governance
+      id: 37da42c4-afeb-4917-a66a-e154d698d17c
+      name: internal_governance_update
+    - displayName: View Identity Governance
+      id: a1908dd6-3fdc-48b3-89d3-fcc5477d8afa
+      name: internal_governance_view
+  displayName: Identity Governance Management API
+  id: c6c231af-eb8e-4680-9cf4-22cae3eeccbe
+  identifier: /api/server/v1/identity-governance
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Group
+      id: 5f5b4fef-b8d4-4332-ab2e-9067f0456dd6
+      name: internal_org_group_mgt_create
+    - displayName: View Group
+      id: 7fb61cea-7d81-4705-b85d-ff8e0b560b74
+      name: internal_org_group_mgt_view
+    - displayName: Delete Group
+      id: b55ac541-570e-4b1f-8297-467bb49ae71b
+      name: internal_org_group_mgt_delete
+    - displayName: Update Group
+      id: dc8d69e3-389e-4440-889f-4fe46fe56203
+      name: internal_org_group_mgt_update
+  displayName: SCIM2 Groups API
+  id: 5634b759-174c-4d5e-be57-8a5c62369ca2
+  identifier: /o/scim2/Groups
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Branding View Feature
+      id: 733A9C58-8FF3-43D0-8C5F-D7229D91CB4D
+      name: console:branding_view
+    - displayName: Branding Feature
+      id: 89f56f30-6f9b-415b-9ae7-8ac357358649
+      name: console:branding
+    - displayName: Branding Edit Feature
+      id: F595A929-5649-4D6B-BBC7-D86391E5BECD
+      name: console:branding_edit
+  displayName: Branding Management Feature
+  id: 69bf3590-ba19-41a7-be44-434e7f4484df
+  identifier: console:branding
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Create Config
+      id: 26e33f1c-6d16-4373-9725-f9d657b2fdfe
+      name: internal_org_config_create
+    - displayName: Delete Config
+      id: 6a6ba52f-021c-47a2-8e4a-31b7fe51609a
+      name: internal_org_config_delete
+    - displayName: View Config
+      id: 70a22448-4e5c-4b7c-840a-d73b3d46dc7b
+      name: internal_org_config_view
+    - displayName: Update Config
+      id: dba1602c-2668-4b3c-a8ac-8e8a49621e22
+      name: internal_org_config_update
+  displayName: Server Configuration Management API
+  id: 64139ef1-fee3-4580-b373-d9a0bcb2932d
+  identifier: /o/api/server/v1/configs
+  policyId: RBAC
+  type: CONSOLE_ORG_LEVEL
+- authorizedScopes:
+    - displayName: Update Keystore
+      id: c492627a-f8f6-40f2-b56d-add389bb6e03
+      name: internal_keystore_update
+    - displayName: View Keystore
+      id: d81c709c-0ec5-4d52-9936-add0bf6e3118
+      name: internal_keystore_view
+  displayName: Keystore Management API
+  id: d282eb49-5ea1-43ca-a35e-3dccb63eb3bb
+  identifier: /api/server/v1/keystores/certs
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Server Feature
+      id: 894c2dba-4b35-4cd6-9064-834b1ee3ade9
+      name: console:server
+  displayName: Server Management Feature
+  id: ac66cd39-2b3e-4b0b-ab96-861f56f95760
+  identifier: console:server
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Organization Discovery Edit Feature
+      id: 7CF358AB-C342-444D-BE31-DC41A9492371
+      name: console:organizationDiscovery_edit
+    - displayName: Organization Discovery View Feature
+      id: 99B894EE-5BB2-4CCA-893A-E5D5748A0F09
+      name: console:organizationDiscovery_view
+    - displayName: Organization Discovery Feature
+      id: f9eb812e-54ed-4687-80ea-958ff8a0b5d2
+      name: console:organizationDiscovery
+  displayName: Organization Discovery Management Feature
+  id: 4e90ea67-c6f9-4141-847b-83c35fc08769
+  identifier: console:organizationDiscovery
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Application Feature
+      id: 26724f68-5a33-416d-9d9a-36c7de9662e1
+      name: console:org:applications
+    - displayName: Application View Feature
+      id: 8563C832-42C5-4960-B289-695A43D3830B
+      name: console:org:applications_view
+    - displayName: Application Edit Feature
+      id: BBA0C5E8-6361-4091-A200-E681350CDD01
+      name: console:org:applications_edit
+  displayName: Application Management Feature
+  id: 2b0e4dc0-532b-4c8f-bef4-38acfb9c7637
+  identifier: console:org:applications
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update authorized internal APIs of an Application
+      id: 17DDBF98-B5D1-4D70-B8E7-F0FA108A828F
+      name: internal_org_application_internal_api_update
+    - displayName: Update authorized business APIs of an Application
+      id: 28172E55-0990-44CD-A983-82625FCC21C0
+      name: internal_org_application_business_api_update
+    - displayName: View application client secret
+      id: 2AB929F3-6A4E-40E1-9F34-918F5C06C7A7
+      name: internal_org_application_mgt_client_secret_view
+    - displayName: Update Application
+      id: 3ab9e9fa-403c-4619-980e-e131e40cc371
+      name: internal_org_application_mgt_update
+    - displayName: Delete Application
+      id: a76c2239-5f8d-4a3d-b8b8-a2ce599be987
+      name: internal_org_application_mgt_delete
+    - displayName: Regenerate Application Secret
+      id: BEE6979E-1860-4D70-AF40-87CE2CDF388C
+      name: internal_org_application_mgt_client_secret_create
+    - displayName: Create Application
+      id: c9828667-b46a-47fa-a49f-121db5def5c6
+      name: internal_org_application_mgt_create
+    - displayName: View Application
+      id: ec79037e-1e44-40f5-97a3-3906d097e7d7
+      name: internal_org_application_mgt_view
+  displayName: Application Management API
+  id: 4207e199-9744-4e17-9e18-6f1451db8a96
+  identifier: /o/api/server/v1/applications
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Extensions
+      id: 04226c80-7878-41a0-9549-50fc40ed08b6
+      name: internal_org_extensions_view
+  displayName: Extension Management API
+  id: a615f131-0848-42c7-86c4-66817dc01c3a
+  identifier: /o/api/server/v1/extensions
+  policyId: RBAC
+  type: CONSOLE_ORG_LEVEL
+- authorizedScopes:
+    - displayName: View Identity Provider
+      id: 12e12431-5e1f-43ef-b06c-cbcc20c0302c
+      name: internal_org_idp_view
+    - displayName: Delete Identity Provider
+      id: 3f8f4226-8a7b-401e-a0e3-2636e3b067ad
+      name: internal_org_idp_delete
+    - displayName: Update Identity Provider
+      id: 93fc6004-c977-481d-abd4-e8af6e6ebce1
+      name: internal_org_idp_update
+    - displayName: Create Identity Provider
+      id: 9afbd226-ec08-4e45-8359-87574bd9c995
+      name: internal_org_idp_create
+  displayName: Identity Provider Management API
+  id: be147e87-d33f-4f05-9808-544f314be0d8
+  identifier: /o/api/server/v1/identity-providers
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete invited guest user
+      id: 51c9aab3-41cb-4a08-9c8c-e791f18ee6d6
+      name: internal_guest_mgt_user_delete
+    - displayName: Delete guest management invites
+      id: 6af31ccf-6413-4609-a129-3f70f72d1f91
+      name: internal_guest_mgt_invite_delete
+    - displayName: Guest management invite
+      id: 6b531a58-320c-4217-a9e4-a00b617d145c
+      name: internal_guest_mgt_invite_add
+    - displayName: List guest management invites
+      id: 8cbec0af-c983-4191-9518-915aec2bff78
+      name: internal_guest_mgt_invite_list
+    - displayName: Update guest management invites
+      id: af149da1-5d9f-4343-aaeb-9cfc8f3b5d82
+      name: internal_guest_mgt_invite_update
+    - displayName: Validate guest management invites
+      id: e2aa28ea-76f6-4dd5-a5fa-0188692f1d44
+      name: internal_guest_mgt_invite_validate
+  displayName: Guest user management API
+  id: f3a3079a-e108-45ac-a7cf-222442422534
+  identifier: /api/asgardeo-guest/v1/users/invite
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Extensions
+      id: 621ef0f2-7fa2-4420-8034-eda296f97d99
+      name: internal_extensions_view
+  displayName: Extension Management API
+  id: 61062515-b3e0-47a1-941b-1d8ce4753f6b
+  identifier: /api/server/v1/extensions
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Recovery
+      id: b9209236-c595-4a45-af88-d5c2ecf0b6f3
+      name: internal_org_recovery_view
+    - displayName: Create Recovery
+      id: f9cc23c7-1ec0-4d3a-a26f-da4b6a66b4e4
+      name: internal_org_recovery_create
+  displayName: Identity Recovery API
+  id: c8378424-dd19-4cb9-8200-b654d570c827
+  identifier: /o/api/identity/recovery
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Add Guest Invitations
+      id: 1659beb6-9eb4-448d-9326-f12d5302c497
+      name: internal_org_guest_mgt_invite_add
+    - displayName: Delete Guest Invitations
+      id: 83d09cd2-a3d0-4716-9474-28422683cba3
+      name: internal_org_guest_mgt_invite_delete
+    - displayName: List Guest Invitations
+      id: ba328590-8b9e-4be3-8c65-4509bf930b0e
+      name: internal_org_guest_mgt_invite_list
+  displayName: Guest Invitation Management API
+  id: edc5df71-7efc-4599-941e-a170b3425f74
+  identifier: /o/api/server/v1/guests/invitation
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Organization Configs
+      id: 00c5b5e9-79e2-45c2-80c6-56938766170f
+      name: internal_organization_config_update
+    - displayName: View Organization Configs
+      id: 25d27964-3608-4064-b344-982309eb5910
+      name: internal_organization_config_view
+    - displayName: Delete Organization Configs
+      id: 6bf10151-e292-4b12-8341-59b1aa21dd07
+      name: internal_organization_config_delete
+    - displayName: Add Organization Configs
+      id: 70535e6d-2332-458e-8ab4-845c40f36cf5
+      name: internal_organization_config_add
+  displayName: Organization Discovery Configuration Management API
+  id: b563aab4-15be-46e7-a7d3-f128079403aa
+  identifier: /api/server/v1/organization-configs/discovery
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Email Template Feature
+      id: 5d72eec5-3cec-4085-a117-1659aa965b10
+      name: console:emailTemplates
+    - displayName: Email Template View Feature
+      id: 5FFCB41D-62E6-4F25-AEC8-347BEFF2E332
+      name: console:emailTemplates_view
+    - displayName: Email Template Edit Feature
+      id: 9473D68E-886C-4E04-BDCB-15341B625B82
+      name: console:emailTemplates_edit
+  displayName: Email Template Management Feature
+  id: f4c0d6cd-de66-4ea6-9717-b98daf92fa63
+  identifier: console:emailTemplates
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Role Feature
+      id: 9e1890b9-d4c2-4d95-a7d0-baacd8f1174a
+      name: console:org:roles
+    - displayName: Role View Feature
+      id: C170C9FF-0050-4E06-9340-C1990D7470E5
+      name: console:org:roles_view
+    - displayName: Role Edit Feature
+      id: F7731C62-027D-4BDD-B033-7BA72F291A84
+      name: console:org:roles_edit
+  displayName: Role Management Feature
+  id: a0d5d8ca-46ef-4f0d-9d4a-bb0c864124a0
+  identifier: console:org:roles
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: View Password Expired Users
+      id: 6070829f-dcf5-4c6a-85a6-54769122ac55
+      name: internal_password_expired_user_view
+  displayName: Password Expired User Identification API
+  id: 21150297-03f2-4efa-b30e-e449d607e627
+  identifier: /api/server/v1/password-expired-users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Add Configuration
+      id: 54f58ada-cb6a-4a09-bf27-27a9efa3108b
+      name: internal_config_mgt_add
+    - displayName: View Configuration
+      id: 889d90ab-8f41-4665-8539-c4af4e22cf8d
+      name: internal_config_mgt_view
+    - displayName: List Configuration
+      id: b6ff395b-1779-4896-aa97-c1329186ff16
+      name: internal_config_mgt_list
+    - displayName: Delete Configuration
+      id: c5c9bf6d-1119-4175-937d-7fd396976181
+      name: internal_config_mgt_delete
+    - displayName: Update Configuration
+      id: d072cd0d-a35d-44a8-9127-4ec2b8d085a4
+      name: internal_config_mgt_update
+  displayName: Identity Configuration Management API
+  id: 51093172-7efa-4551-a6db-3d4e296e7d32
+  identifier: /api/identity/config-mgt/v1.0
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create User Recovery
+      id: a820e150-f70c-4130-90fe-e30003e8c491
+      name: internal_user_recovery_create
+  displayName: Account Recovery V1/V2 API
+  id: 9e11b4aa-86dc-4092-96ab-35938d125f87
+  identifier: /api/users/v1/recovery
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Branding Feature
+      id: a5063276-474b-4832-b601-aac29a34e4de
+      name: console:org:branding
+    - displayName: Branding Edit Feature
+      id: CF7CF8EF-3836-4DDC-8A71-550316D13F3F
+      name: console:org:branding_edit
+    - displayName: Branding View Feature
+      id: D42497D8-66F6-4C96-8F88-7D2980D9A722
+      name: console:org:branding_view
+  displayName: Branding Management Feature
+  id: 811d117d-4807-4c9a-a7d1-3e5e64fc6ee9
+  identifier: console:org:branding
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Create Userstore
+      id: 6da281db-5b2c-4f08-ac83-08f3e5e11275
+      name: internal_userstore_create
+    - displayName: View Userstore
+      id: 920ca4b7-8b12-4aa2-a451-3d43c199b085
+      name: internal_userstore_view
+    - displayName: Update Userstore
+      id: bed3cef5-65b9-40a2-bc0c-e9b2babd9e8e
+      name: internal_userstore_update
+    - displayName: Delete Userstore
+      id: c64b7d22-e3a3-45a1-b32a-779053c75045
+      name: internal_userstore_delete
+  displayName: Userstore Management API
+  id: 432a6332-c3b7-465a-bdec-476e2289eaf5
+  identifier: /api/server/v1/userstore
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Group Edit Feature
+      id: 17B1E432-82ED-4F45-BD57-0D3D4099B2E3
+      name: console:groups_edit
+    - displayName: Group Feature
+      id: 49ba3f8d-6ded-4a95-abdb-7aa24e34b94b
+      name: console:groups
+    - displayName: Group View Feature
+      id: 93DBB2D8-3896-46BF-A079-B90C3A480F48
+      name: console:groups_view
+  displayName: Group Management Feature
+  id: 8cda4152-6271-4547-b0d5-d039fe246dd8
+  identifier: console:groups
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Console Setting Edit Feature
+      id: 340CEF49-8E22-41C5-BE67-B73166556E7E
+      name: console:settings_edit
+    - displayName: Console Setting View Feature
+      id: 3B43FF8C-E6EA-4E87-82AC-FCCC36A2DC72
+      name: console:settings_view
+    - displayName: Console Setting Feature
+      id: de7ebd69-488c-4919-a07c-63baacd9c5e0
+      name: console:settings
+  displayName: Console Setting Management Feature
+  id: ee27bf69-f45b-401b-b85a-e9361a4c8ce0
+  identifier: console:settings
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Group Edit Feature
+      id: 7507BEA1-1FDE-4A9A-891A-8AA51AFEC4C6
+      name: console:org:groups_edit
+    - displayName: Group View Feature
+      id: 8489A551-07D9-4D75-9CE1-DF273BDEEE1D
+      name: console:org:groups_view
+    - displayName: Group Feature
+      id: d7c9a29e-f5bb-4903-be95-b122820cd16a
+      name: console:org:groups
+  displayName: Group Management Feature
+  id: 1f24fdec-14c2-4af8-bce9-92fe580e26a9
+  identifier: console:org:groups
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: List Idle Accounts
+      id: d35a646d-f826-497e-b730-15493d9070ef
+      name: internal_idle_account_list
+  displayName: Idle Account Identification Management API
+  id: a4031852-da01-4d7c-b6a1-1262b03abf39
+  identifier: /api/idle-account-identification/v1/inactive-users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Organization Edit Feature
+      id: 958E74DF-B6DA-45F1-9182-2E159C913F05
+      name: console:organizations_edit
+    - displayName: Organization View Feature
+      id: A8CBB49D-C24E-41EF-B5C4-1C91CC93321E
+      name: console:organizations_view
+    - displayName: Organization Feature
+      id: bff1fcf6-7e3d-4e20-8ef3-80a1a2d2805a
+      name: console:organizations
+  displayName: Organization Management Feature
+  id: 73be3a19-1807-40a0-88c4-dcac61c04ce5
+  identifier: console:organizations
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Identity Provider
+      id: 24e4f2d7-6fee-4cff-9984-f2c355d212b1
+      name: internal_idp_update
+    - displayName: View Identity Provider
+      id: 2801da6f-fc82-4b9a-8b7b-6e74c31eeaa5
+      name: internal_idp_view
+    - displayName: Delete Identity Provider
+      id: 6a9ebc43-18aa-42ba-9bc1-2407849864db
+      name: internal_idp_delete
+    - displayName: Create Identity Provider
+      id: c218bf18-a686-4301-ae74-f64d35881a6f
+      name: internal_idp_create
+  displayName: Identity Provider Management API
+  id: 0fe8b0c0-36b4-4ed2-b15d-bdf6cbe1a279
+  identifier: /api/server/v1/identity-providers
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Console Setting Edit Feature
+      id: 019CF8F8-99B7-4AEA-BB2D-D22328520883
+      name: console:org:settings_edit
+    - displayName: Console Setting Feature
+      id: 32b53ca2-2cb2-4019-83fc-b45c7f553963
+      name: console:org:settings
+    - displayName: Console Setting View Feature
+      id: D2E90ED1-0D7C-4CFC-BEEB-BBABE491DCDF
+      name: console:org:settings_view
+  displayName: Console Setting Management Feature
+  id: d88d9313-3ab9-48a6-86bb-debbdf2f002c
+  identifier: console:org:settings
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: List Idle Accounts
+      id: d1e9cc47-1351-4c36-952a-742b5f56b4b0
+      name: internal_org_idle_account_list
+  displayName: Idle Account Identification Management API
+  id: c7c800b7-fdba-4966-8dbf-1a9366fc1c81
+  identifier: /o/api/idle-account-identification/v1/inactive-users
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Password Expired Users
+      id: 09b9fcff-0744-41e4-a4e5-9c86f8ced548
+      name: internal_org_password_expired_user_view
+  displayName: Password Expired User Identification API
+  id: 6f7cb68d-6f38-40a7-a8fa-2782d150925c
+  identifier: /o/api/server/v1/password-expired-users
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete Group
+      id: 5e9abc4e-1000-434b-8e5b-adb9e056a155
+      name: internal_group_mgt_delete
+    - displayName: Create Group
+      id: 5fb0e2f1-9792-4530-ae02-832d7d8edb31
+      name: internal_group_mgt_create
+    - displayName: Update Group
+      id: 997cfc7b-dd8a-444d-8c89-997c16a70595
+      name: internal_group_mgt_update
+    - displayName: View Group
+      id: e06e2414-ff22-49f6-8e74-fc0ee8289461
+      name: internal_group_mgt_view
+  displayName: SCIM2 Groups API
+  id: 061289a9-1adf-4348-a6ce-e6d16b24c6b4
+  identifier: /scim2/Groups
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Claim
+      id: 072c6e4a-582c-49cc-9b4f-60ddd4fd3564
+      name: internal_claim_meta_delete
+    - displayName: Update Claim
+      id: 0e58c21c-ede4-479c-a616-b0bb2597ff43
+      name: internal_claim_meta_update
+    - displayName: Create Claim
+      id: bc24d9f4-ec91-4f0f-b968-2b9c764ec119
+      name: internal_claim_meta_create
+    - displayName: View Claim
+      id: e3a58437-854a-4027-baaf-ce7103b3b3f1
+      name: internal_claim_meta_view
+  displayName: Claim Management API
+  id: 86c231f1-efdb-418d-ba4d-84841ae1da80
+  identifier: /api/server/v1/claim-dialects
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Email Template
+      id: 22b516e6-10e3-4dd7-8cf4-e94cd712ec84
+      name: internal_email_mgt_create
+    - displayName: Update Email Template
+      id: 7836cf85-64e9-4e6b-8599-add663b25e39
+      name: internal_email_mgt_update
+    - displayName: Delete Email Template
+      id: bae94ccd-b908-4241-874c-c666f392d6f9
+      name: internal_email_mgt_delete
+    - displayName: View Email Template
+      id: da3d399f-6c61-4790-9749-34f6a2819e0c
+      name: internal_email_mgt_view
+  displayName: Email Template Management API v1/v2
+  id: bba6ab3e-bc74-4978-a580-e1a550de4002
+  identifier: /api/server/v(.*)/email/template-types
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Email Template
+      id: 2eb9fef4-990c-4c8f-9391-f22f2135374c
+      name: internal_org_email_mgt_delete
+    - displayName: Create Email Template
+      id: 3d86d914-c4b2-4c48-9b03-63b33c30f256
+      name: internal_org_email_mgt_create
+    - displayName: Update Email Template
+      id: 3fed6b93-c23a-4a92-a620-ccb66513d501
+      name: internal_org_email_mgt_update
+    - displayName: View Email Template
+      id: e7adaaf4-f9be-4b74-9bf4-5b6ce8a9264a
+      name: internal_org_email_mgt_view
+  displayName: Email Template Management API v1/v2
+  id: be5ea394-84d4-43af-accd-bf0c3055ca40
+  identifier: /o/api/server/v(.*)/email/template-types
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Personal Identification Information
+      id: 95c3a866-3a54-4c8e-8db5-a5a42499a530
+      name: internal_pi_info_view
+  displayName: User Personal Identification API
+  id: a9aee01b-96be-4bef-b44c-56bd865c38ae
+  identifier: /api/identity/user/v1.0/pi-info
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Authorized Applications
+      id: 05994fea-d43d-4d80-87a7-0c4d29802aaf
+      name: internal_user_authorizedapp_view
+    - displayName: Delete Authorized Applications
+      id: 10056e6c-09df-454c-913a-bfecde82642d
+      name: internal_user_authorizedapp_delete
+  displayName: Authorized Application Management V1/V2 API
+  id: ef98f0f4-894b-42e6-a8c7-c0bab9699029
+  identifier: /api/users/v(.*)/(.*)/authorized-apps
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Validation Rule
+      id: 1720f1e2-2f83-4687-96cf-524c5ffb55e7
+      name: internal_validation_rule_mgt_update
+  displayName: Validation Rules API
+  id: 21020dd9-06fe-4644-8ac1-2ef41d32a03f
+  identifier: /api/server/v1/validation-rules
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View application client secret
+      id: 01523E36-D6B4-49A4-9FD6-C3EDAEAA7EC4
+      name: internal_application_mgt_client_secret_view
+    - displayName: Update authorized internal APIs of an Application
+      id: 0AA799EC-6FC2-41A9-9BD4-6FF711226D7D
+      name: internal_application_internal_api_update
+    - displayName: Create Application
+      id: 29aa14c2-57f9-495a-90c5-260f28305b3e
+      name: internal_application_mgt_create
+    - displayName: Delete Application
+      id: 31474443-c498-4e0d-b76b-738973546979
+      name: internal_application_mgt_delete
+    - displayName: Update Application
+      id: 92e95601-d88d-49b0-a3a8-c478d17d841f
+      name: internal_application_mgt_update
+    - displayName: Update authorized business APIs of an Application
+      id: A1351066-0A4A-433E-AA13-128D55CFDF67
+      name: internal_application_business_api_update
+    - displayName: View Application
+      id: f843052a-a160-425b-8305-022a38157fe2
+      name: internal_application_mgt_view
+    - displayName: Regenerate Application Secret
+      id: FF17D59C-3B25-4E9C-BE25-965466CD32DB
+      name: internal_application_mgt_client_secret_create
+  displayName: Application Management API
+  id: 3b77029a-cb9a-48e1-9b5e-1dcb6b464e2a
+  identifier: /api/server/v1/applications
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Authenticators
+      id: 244f75f1-3861-441d-b742-11ca5d99dabe
+      name: internal_authenticator_view
+  displayName: Authenticators Management API
+  id: 6f46b288-f39a-4389-a02e-9f47ce3c7af9
+  identifier: /api/server/v1/authenticators
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Branding Policy URLs
+      id: 5053E051-1A04-4782-95E9-113EE6281C77
+      name: internal_branding_preference_policy_update
+    - displayName: Update Branding Preference
+      id: c9e7d4c4-db14-4ea7-ae9f-0b3969a0d65a
+      name: internal_branding_preference_update
+  displayName: Branding Preference Management API
+  id: a2c091e2-b5e3-4d2e-807c-9e4227084013
+  identifier: /api/server/v1/branding-preference
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Organizations
+      id: 1cd382b7-8f00-4d0d-90a5-078014032c5b
+      name: internal_org_organization_update
+    - displayName: Create Organizations
+      id: 5d562208-801a-4fff-a5fd-cd0290a84f0a
+      name: internal_org_organization_create
+    - displayName: View Organizations
+      id: 82542103-0130-4090-a8af-f71a15fb6fd5
+      name: internal_org_organization_view
+    - displayName: Delete Organizations
+      id: 95934e86-e982-4c71-952d-f619c2b9d2f9
+      name: internal_org_organization_delete
+  displayName: Organization Management API
+  id: 876262eb-0688-465d-97c5-199aace376ec
+  identifier: /o/api/server/v1/organizations
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Create Userstore
+      id: 0eabb5a2-5c56-44e7-bd34-e112672af700
+      name: internal_org_userstore_create
+    - displayName: View Userstore
+      id: 209dd058-c630-4184-9417-7e19ce5ee38c
+      name: internal_org_userstore_view
+    - displayName: Delete Userstore
+      id: a2dea2a3-e5ab-4ef2-9943-0b948a1efa8d
+      name: internal_org_userstore_delete
+    - displayName: Update Userstore
+      id: c6f22691-a45a-4b6b-ab50-3ccdfbc7db03
+      name: internal_org_userstore_update
+  displayName: Userstore Management API
+  id: b741e64e-59ec-4ef2-a67f-8058bfacd61e
+  identifier: /o/api/server/v1/userstore
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Diagnostic Logs View Feature
+      id: 6AE0669B-D6E1-4744-984E-FC684F144075
+      name: console:diagnosticLogs_view
+    - displayName: Diagnostic Logs Feature
+      id: 91ac2754-7d8a-4825-978c-cc2511afb632
+      name: console:diagnosticLogs
+  displayName: Diagnostic Logs Feature
+  id: 245ddaa5-0df8-4b32-9c67-c98a8b0c219b
+  identifier: console:diagnosticLogs
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Audit Logs View Feature
+      id: 59CB4A22-AF47-4C09-BD80-E41485422195
+      name: console:auditLogs_view
+    - displayName: Audit Logs Feature
+      id: 9dc036e2-9fd0-4581-af2b-4d9d55d51ae0
+      name: console:auditLogs
+  displayName: Audit Logs Feature
+  id: f71602db-3f02-4295-82e2-63cf92adb339
+  identifier: console:auditLogs
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Logs Feature
+      id: 94e2a7da-733b-4666-a206-05c30d019117
+      name: console:logs
+    - displayName: Logs View Feature
+      id: C7A2E021-F4F3-432B-A268-A8DDBE081EED
+      name: console:logs_view
+  displayName: Logs Feature
+  id: fed2cfbd-46d3-4cbe-9fb4-5965323dd2e2
+  identifier: console:logs
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Insights View Feature
+      id: A03B2010-D06B-48A4-B834-A9854DB229CF
+      name: console:insights_view
+    - displayName: Insights Feature
+      id: b31d767c-4dde-4d71-a55c-22df4d0c8036
+      name: console:insights
+  displayName: Insights Feature
+  id: 42ef7319-6771-4390-bafa-8dff9bc96dfe
+  identifier: console:insights
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Administrators Feature
+      id: c81797bf-fafe-40db-8dce-b64e46e50116
+      name: console:administrators
+  displayName: Administrators Feature
+  id: e2123723-6ca4-4a82-a3a9-d0a77597a465
+  identifier: console:administrators
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Events Edit Feature
+      id: 276B8FBB-4FEB-4A23-9C7D-6EBE84DC5093
+      name: console:events_edit
+    - displayName: Events View Feature
+      id: 63857EB2-3917-4267-9CA3-4F7DC5A1F09A
+      name: console:events_view
+    - displayName: Events Feature
+      id: d4c5b27a-b0a2-4418-889a-0b9c1759be4b
+      name: console:events
+  displayName: Events Feature
+  id: 61e419bb-34f9-4f10-bb41-8576b8613170
+  identifier: console:events
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: OAuth2 Introspection
+      id: 7d6dc1c0-d3cf-4d2d-af2c-ec022ed05e47
+      name: internal_oauth2_introspect
+  displayName: OAuth2 Introspection API
+  id: af79a8c4-5eb9-4719-b2c2-07e92a689525
+  identifier: /oauth2/introspect
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Functional Library
+      id: 19646f4b-e67c-4d47-a2de-a7d9797c5cf3
+      name: internal_functional_lib_create
+    - displayName: View Functional Library
+      id: 40132d8c-c1d7-42e7-8ada-dcc3ad23a566
+      name: internal_functional_lib_view
+    - displayName: Delete Functional Library
+      id: 9bee34ce-2ec1-4b46-bdb7-6a0d0628befd
+      name: internal_functional_lib_delete
+    - displayName: Update Functional Library
+      id: b37c435a-403b-4baf-82e6-8c30cc54612d
+      name: internal_functional_lib_update
+  displayName: Script Library Management API
+  id: 0abb2483-8348-4d03-8220-4860117ef09e
+  identifier: /api/server/v1/script-libraries
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Manage PEP (Policy Enforcement Point)
+      id: 8d2e2050-5763-48e5-ae9c-b660bff84f40
+      name: internal_manage_pep
+  displayName: Entitlement Management API
+  id: 6a39144b-7a31-41b6-8c2b-47774dab5226
+  identifier: /api/identity/entitlement/
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete OAuth Scope
+      id: 262780ee-f0a0-4219-b33c-8fa57750d0dd
+      name: internal_oauth_scope_delete
+    - displayName: View OAuth Scope
+      id: 3b5eee04-ad63-40c4-b601-d09a557e326a
+      name: internal_oauth_scope_view
+    - displayName: Create OAuth Scope
+      id: 5c369880-f4ce-4569-820f-6666cbf06f01
+      name: internal_oauth_scope_create
+    - displayName: Update OAuth Scope
+      id: 7392b1f5-9c89-4764-a3e5-cf17d5df3232
+      name: internal_oauth_scope_update
+  displayName: OAuth2.0 Scope Management API
+  id: 15220790-e883-4150-ad19-0f2781cd64c7
+  identifier: /api/identity/oauth2/v1.0/scopes
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Permissions
+      id: 21664384-7998-47b4-82a7-7608585b4096
+      name: internal_permission_mgt_view
+  displayName: Permission Management API
+  id: c7da6dca-7b97-446d-a264-86e4dac96ed2
+  identifier: /api/server/v1/permission-management/permissions
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create User Functionality
+      id: 5b94bd6b-448a-434f-9ee9-d2f8e404e16f
+      name: internal_user_fucntionality_create
+    - displayName: View User Functionality
+      id: dd2e5aab-45ba-4d1e-a10a-1450a7ad44db
+      name: internal_user_fucntionality_view
+  displayName: Functionality Management API
+  id: 7616cf31-77c1-4afc-ade2-84bf2ef81b36
+  identifier: /api/users/v1/(.*)/user-functionality/(.*)
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Secret
+      id: 1ec7fcc4-b4a2-4881-8876-f9955a24b97d
+      name: internal_secret_mgt_delete
+    - displayName: Update Secret
+      id: 3706de8f-e31c-4351-8e3a-0c4195fe436c
+      name: internal_secret_mgt_update
+    - displayName: Add Secret
+      id: 6e127736-3d32-4e13-b9ed-0444cf2f482e
+      name: internal_secret_mgt_add
+    - displayName: View Secret
+      id: 793e2353-7db0-4f74-8030-a2ed2541ef75
+      name: internal_secret_mgt_view
+  displayName: Secret Management API
+  id: 6734ccd5-f93d-4ae2-90af-ea2e94bcc590
+  identifier: /api/server/v1/secrets
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Add Secret Type
+      id: b8783d59-f172-4a4b-87d1-c0a6b3d88e19
+      name: internal_secret_type_mgt_add
+    - displayName: Delete Secret Type
+      id: e5f712fb-cfa8-4e5f-9d3c-533a792e5268
+      name: internal_secret_type_mgt_delete
+    - displayName: Update Secret Type
+      id: f687aca8-d635-4bb7-b12e-1bd90da06efe
+      name: internal_secret_type_mgt_update
+    - displayName: View Secret Type
+      id: ff13d135-b3f1-4d6b-940d-5a74dc3275a9
+      name: internal_secret_type_mgt_view
+  displayName: Secret Type Management API
+  id: a248cc09-13b3-4613-84b6-d5ef85cc58fe
+  identifier: /api/server/v1/secret-type
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Action
+      id: 2d5630c0-5683-49c0-a4f8-787132d9cad8
+      name: internal_action_mgt_create
+    - displayName: View Action
+      id: 518ac9ce-2ac9-4273-bd23-31411316785b
+      name: internal_action_mgt_view
+    - displayName: Update Action
+      id: c524baff-e058-43e7-9c98-d4d6c16c0033
+      name: internal_action_mgt_update
+    - displayName: Delete Action
+      id: ca7e1bbd-a425-4d25-9e94-00c78aff65f6
+      name: internal_action_mgt_delete
+  displayName: Action Management API
+  id: 5eeac20d-0dfd-497c-8c04-41d8931a2d85
+  identifier: /api/server/v1/actions
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: User Impersonation Scope
+      id: 9466e3b7-ff14-47c2-82f9-21f24ce98ed5
+      name: internal_user_impersonate
+  displayName: User Impersonation
+  id: b571dd60-00e6-4957-a799-7f2221e07022
+  identifier: system:impersonation
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Action View Feature
+      id: 25B6242B-E2E0-4E04-9252-732FD8E70B04
+      name: console:actions_view
+    - displayName: Action Edit Feature
+      id: 4B9A2BA4-0A04-4B8B-BD23-E81089AB1895
+      name: console:actions_edit
+    - displayName: Action Feature
+      id: 9b2c5ea1-fb56-49e2-85fc-94017870d9f8
+      name: console:actions
+  displayName: Action Management Feature
+  id: f65fc1c4-6aad-4e75-bd96-5a74f43a4050
+  identifier: console:actions
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Insights view
+      id: e19106c9-539d-4471-87c1-5f95d362c829
+      name: internal_insights_view
+  displayName: Insights Service API
+  id: fb422669-b44d-44b2-aace-c5acfa07f634
+  identifier: /api/asgardeo/insights/v1/user
+  policyId: RBAC
+  type: CONSOLE
+- authorizedScopes:
+    - displayName: Delete Identity Verification Provider
+      id: 0f337238-d65a-44cf-99b8-9cd9804fac5b
+      name: internal_idvp_delete
+    - displayName: View Identity Verification Provider
+      id: bca34c17-9466-4a90-998b-a1954cd90acb
+      name: internal_idvp_view
+    - displayName: Create Identity Verification Provider
+      id: d2d9ba50-afb6-438d-824c-971fa5215670
+      name: internal_idvp_add
+    - displayName: Update Identity Verification Provider
+      id: f036b397-e49d-4b60-accb-4a8466008e77
+      name: internal_idvp_update
+  displayName: Identity Verification Provider Management API
+  id: a39691f2-1325-4cee-a759-e734716a0abd
+  identifier: /api/server/v1/idv-providers
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Verify Identity Verification Claim
+      id: 06053434-772c-4be5-9962-3eeb529f7dff
+      name: internal_idv_claim_verify
+    - displayName: Create Identity Verification Claim
+      id: 31577645-acaf-4125-b177-3c6076ab3e6e
+      name: internal_idv_claim_add
+    - displayName: View Identity Verification Claim
+      id: ded263eb-a0c5-4746-a5be-ef72b4ba7453
+      name: internal_idv_claim_view
+    - displayName: Update Identity Verification Claim
+      id: e5245678-7f26-4986-bcc2-4fe209e15608
+      name: internal_idv_claim_update
+  displayName: Identity Verification Claim Management API
+  id: 3b0a0218-c738-4015-a499-eabfd35f97a1
+  identifier: /api/users/v1/(.*)/idv
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: SMS Template Edit Feature
+      id: C3E9EF23-20E3-479F-AE7C-76A719F2D2DF
+      name: console:smsTemplates_edit
+    - displayName: SMS Template View Feature
+      id: C40CE48A-46CE-40D5-8D10-433B6CD01B0D
+      name: console:smsTemplates_view
+    - displayName: SMS Template Feature
+      id: e6d13f6f-36c3-4dfe-ad23-d7605d79ca12
+      name: console:smsTemplates
+  displayName: SMS Template Management Feature
+  id: 374919eb-8191-4afa-b574-96c7b10fbbc2
+  identifier: console:smsTemplates
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Notification Template
+      id: 191cf65f-07fc-4cfe-a930-2224015d7822
+      name: internal_org_template_mgt_update
+    - displayName: Create Notification Template
+      id: 8608c785-b8c0-48f6-853b-e1f862dc89c5
+      name: internal_org_template_mgt_create
+    - displayName: View Notification Template
+      id: a804235b-e89e-41cd-91c3-e5295be1fd29
+      name: internal_org_template_mgt_view
+    - displayName: Delete Notification Template
+      id: e0d94b0a-b73c-4446-8290-014fe5c46d6a
+      name: internal_org_template_mgt_delete
+  displayName: Notification Template Management API
+  id: 856dd879-8e9e-4478-adf1-54566449e3da
+  identifier: /o/api/server/v(.*)/notification/(?:email|sms)/template-types
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: SMS Template View Feature
+      id: 2EF3398F-5A39-4885-BBDF-4A9CD87B2433
+      name: console:org:smsTemplates_view
+    - displayName: SMS Template Feature
+      id: 96cba3d4-aeeb-4b35-badc-9db14f283439
+      name: console:org:smsTemplates
+    - displayName: SMS Template Edit Feature
+      id: D4DA16B3-A225-4007-B5A8-D0D55490BD0B
+      name: console:org:smsTemplates_edit
+  displayName: SMS Template Management Feature
+  id: fbd16882-671a-4726-8877-c1771618fb30
+  identifier: console:org:smsTemplates
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Delete Notification Template
+      id: 6ec7545e-e3fd-4f5f-8e27-8403319e2fa1
+      name: internal_template_mgt_delete
+    - displayName: Create Notification Template
+      id: 7d479b2d-2862-4064-8185-8337e1aa0955
+      name: internal_template_mgt_create
+    - displayName: View Notification Template
+      id: b361e564-937b-4b72-be01-9b2531b74b57
+      name: internal_template_mgt_view
+    - displayName: Update Notification Template
+      id: deeecc57-2932-4eca-aa10-375e70c176ef
+      name: internal_template_mgt_update
+  displayName: Notification Template Management API
+  id: 9698c6dc-22dd-40ec-9289-68c6a6ad576e
+  identifier: /api/server/v(.*)/notification/(?:email|sms)/template-types
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Tenants Edit Feature
+      id: 461B4429-9080-49B4-9FB2-A0516BACC5A9
+      name: console:tenants_edit
+    - displayName: Tenants Feature
+      id: 4b795db4-a861-4e1a-89fb-9ace7e84e1bb
+      name: console:tenants
+    - displayName: Tenants View Feature
+      id: 5A1DB5F4-DFF4-494B-ABC1-FED13117DBCB
+      name: console:tenants_view
+  displayName: Tenant Management Feature
+  id: f19c5d57-88ba-497f-9a99-ff836e0d8870
+  identifier: console:tenants
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Secret Management Feature
+      id: 588da665-85cc-4598-9bae-34bff64f917e
+      name: console:secretsManagement
+  displayName: Secret Management Feature
+  id: 509c8764-bcdb-48eb-8bed-19870ef38def
+  identifier: console:secretsManagement
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: View API Resources
+      id: 31bb6c19-0437-41ef-a868-50f4ed6b2d1d
+      name: internal_org_api_resource_view
+  displayName: API Resource Management API
+  id: a7be5941-dfc2-47c7-bcbc-b8aa2a7027a6
+  identifier: /o/api/server/v1/api-resources
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Metadata
+      id: 3fc29b79-371e-4cd5-a9a6-8e3b90e612b0
+      name: internal_rule_metadata_view
+  displayName: Rule Metadata API
+  id: f2cc1241-9e66-4417-96c3-c3047c2d8ce5
+  identifier: /api/server/v1/rules/metadata
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Authenticator
+      id: 58b74b25-c181-47d0-93ac-3db5846cac09
+      name: internal_custom_authenticator_update
+    - displayName: Create Authenticator
+      id: 9d5e38f6-ba84-40b6-9c74-60d7bdf7dec4
+      name: internal_custom_authenticator_create
+    - displayName: Delete Authenticator
+      id: b6046c27-5bf9-4cc2-85c6-b490f80bfefd
+      name: internal_custom_authenticator_delete
+  displayName: User defined local authenticator API
+  id: 4fd500da-ab77-4c87-9113-387a08d3ff3d
+  identifier: /api/server/v1/authenticators/custom
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: API Resource Edit Feature
+      id: 00DAF9C8-AC77-44D8-B4FA-042351BB8282
+      name: console:org:apiResources_edit
+    - displayName: API Resource Feature
+      id: 5a41ee5f-5fca-4b68-b015-da13fca6f3f9
+      name: console:org:apiResources
+    - displayName: API Resource View Feature
+      id: A716565F-89D7-4F45-A77C-35A223515349
+      name: console:org:apiResources_view
+  displayName: API Resource Management Feature
+  id: f4c50483-bb8e-47e2-b835-ab59e1b8fec3
+  identifier: console:org:apiResources
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Attribute Feature
+      id: 45b686cf-68c6-4d7b-8fed-3f06ac233939
+      name: console:org:attributes
+    - displayName: Attribute View Feature
+      id: DE57E145-3883-41FD-9B22-CF0851EFD766
+      name: console:org:attributes_view
+    - displayName: Attribute Edit Feature
+      id: FF289D82-9920-45B9-9035-0E59494A3848
+      name: console:org:attributes_edit
+  displayName: Attribute Management Feature
+  id: 993363df-b4ae-45e6-b789-82931da6f95d
+  identifier: console:org:attributes
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: User Store View Feature
+      id: 09D33FF0-6DCC-4424-A444-A0DEDA5BEFC0
+      name: console:org:userstores_view
+    - displayName: User Store Feature
+      id: d8a1041e-b905-4284-98ef-54877b11af9e
+      name: console:org:userstores
+    - displayName: User Store Edit Feature
+      id: FEA87C71-DCC4-4DDC-8144-32CAAE59D8D0
+      name: console:org:userstores_edit
+  displayName: User Store Management Feature
+  id: 9b00368e-1f52-42e7-96a1-6e4ea0e5724e
+  identifier: console:org:userstores
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: OAuth2 Introspection
+      id: b1624d6b-ec76-413a-abe7-eca15a035fc3
+      name: internal_org_oauth2_introspect
+  displayName: OAuth2 Introspection API
+  id: 8871b696-c252-4b04-87f4-e471b50bdba3
+  identifier: /o/oauth2/introspect
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View User Associations
+      id: 0510d0af-3b7a-443c-82df-ffe66ca669e3
+      name: internal_org_user_association_view
+    - displayName: Create User Associations
+      id: 94f49b4c-37f2-47cf-84c7-53151ea5dcba
+      name: internal_org_user_association_create
+    - displayName: Delete User Associations
+      id: ca796c8a-0727-4dc7-b63d-adfc8b88748d
+      name: internal_org_user_association_delete
+  displayName: Association Management API
+  id: e8a51916-de94-40fc-8823-eb5f0ee37db4
+  identifier: /o/api/users/v1/(.*)/(.*)associations
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Create DCR
+      id: 39d935f5-4c6b-4582-8761-134270ce3820
+      name: internal_org_dcr_create
+    - displayName: Update DCR
+      id: f9d29c32-0472-4557-8545-469819d52741
+      name: internal_org_dcr_update
+    - displayName: Delete DCR
+      id: ff4423cd-87f7-4063-8013-1e52936476f3
+      name: internal_org_dcr_delete
+    - displayName: View DCR
+      id: ff754087-6544-401d-ba43-d7052ac20c7b
+      name: internal_org_dcr_view
+  displayName: OAuth DCR API
+  id: 7ffb6d31-df71-42de-9253-5cb98de36925
+  identifier: /o/api/identity/oauth2/dcr/v1.1/register
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Share Users
+      id: b4366bbf-f50e-418f-80b6-1067b2c76343
+      name: internal_org_user_share
+    - displayName: Unshare users
+      id: eab4f1a3-7237-4f76-9fc3-512cbd42652f
+      name: internal_org_user_unshare
+    - displayName: View Shared Users
+      id: edf80b43-41e4-4e4c-8dc9-96fce02da66b
+      name: internal_org_user_shared_access_view
+  displayName: User Sharing API
+  id: 246d54b0-a11a-49e5-ab07-4f09a78c6268
+  identifier: /o/api/server/v1/users
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View OIDC Scopes
+      id: 16f9c283-a016-464f-abc4-98d1c28806b1
+      name: internal_org_oidc_scope_mgt_view
+  displayName: OIDC Scope Management API
+  id: dac4d5b9-6a5f-48ab-af10-ac2e67470a19
+  identifier: /o/api/server/v1/oidc/scopes
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete Authenticator
+      id: 1de8e31b-192e-45d4-9fea-d130878d073c
+      name: internal_org_custom_authenticator_delete
+    - displayName: Create Authenticator
+      id: baea13d6-c157-43bd-b668-a56d0aa106e2
+      name: internal_org_custom_authenticator_create
+    - displayName: Update Authenticator
+      id: be3feadc-268b-4cab-8bc9-1405b7773714
+      name: internal_org_custom_authenticator_update
+  displayName: User defined local authenticator API
+  id: 53086208-5e12-4bf5-a4ee-2eac7e10c709
+  identifier: /o/api/server/v1/authenticators/custom
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Unshare users
+      id: a7054b50-1818-4d96-b81c-de0288663b41
+      name: internal_user_unshare
+    - displayName: View Shared Users
+      id: c738e00c-cecc-4b45-9916-01ad530ffca0
+      name: internal_user_shared_access_view
+    - displayName: Share Users
+      id: fd0059f1-ea6c-4ebe-8a22-4509017afaf9
+      name: internal_user_share
+  displayName: User Sharing API
+  id: e0a38414-14e8-4f02-9816-c0a6f010d48c
+  identifier: /api/server/v1/users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Async Operation status
+      id: 9c56d2a6-05ab-4055-a43d-d80c5277837b
+      name: internal_async_operation_status_view
+  displayName: Asynchronous Operation Status API
+  id: f1b8c936-f81d-480a-ad88-ce50e7de48a9
+  identifier: /api/server/v1/async-operations
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Async Operation status
+      id: 1bf2def1-a2d7-4f95-a778-f1973663c58a
+      name: internal_org_async_operation_status_view
+  displayName: Asynchronous Operation Status API
+  id: 62c4ebec-3eb0-4460-8854-8f7076e37d16
+  identifier: /o/api/server/v1/async-operations
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Flow
+      id: 108a579f-7f50-4161-bf88-935488031794
+      name: internal_flow_view
+    - displayName: Update Flow
+      id: 735ee4a0-1287-4e8b-9592-d9a9cd391925
+      name: internal_flow_update
+  displayName: Flow Management API
+  id: 2cec493e-bb26-4617-93a3-3ab3c9d37a2a
+  identifier: /api/server/v1/flow
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: User Impersonation Scope for Organizations
+      id: 6238cf88-b3f5-4880-b9fb-361663e52d85
+      name: internal_org_user_impersonate
+  displayName: Organization User Impersonation
+  id: 1683481d-c53f-4ba8-a552-08ea5f2a99b5
+  identifier: org:impersonation
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Webhook View Feature
+      id: 40ff4558-a20d-45d1-8495-16df1cfabd87
+      name: console:webhooks_view
+    - displayName: Webhook Edit Feature
+      id: 515448d7-c0a1-49ff-a28d-d4678dcce9fe
+      name: console:webhooks_edit
+    - displayName: Webhook Feature
+      id: dfbfb421-9cb9-4b4a-84bf-27c6622c6611
+      name: console:webhooks
+  displayName: Webhook Management Feature
+  id: bc359cf6-9456-41b8-8210-ed96f944202e
+  identifier: console:webhooks
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Workflow
+      id: 094a7fd2-e8e3-459f-8cbf-67c80e63c4c3
+      name: internal_workflow_update
+    - displayName: Delete Workflow
+      id: 18943955-be3e-44e1-a40a-0d536b79571d
+      name: internal_workflow_delete
+    - displayName: View Workflow
+      id: 43210068-a282-4277-8d80-13e4e0ff17b8
+      name: internal_workflow_view
+    - displayName: Create Workflow
+      id: dcd9d57b-1147-4b8e-aca6-5112a7b144b7
+      name: internal_workflow_create
+  displayName: Workflow Management API
+  id: 9f2fef08-d3f6-4f2a-ae57-da9dd91c30ab
+  identifier: /api/server/v1/workflows
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Workflow Association
+      id: 518f309f-1129-4f30-bf41-d6822b38e39c
+      name: internal_workflow_association_update
+    - displayName: View Workflow Association
+      id: 6ccff692-c123-463c-9fcf-713ef6737a81
+      name: internal_workflow_association_view
+    - displayName: Delete Workflow Association
+      id: 727b5df0-ab52-4bae-8e38-ba8b337558be
+      name: internal_workflow_association_delete
+    - displayName: Create Workflow Association
+      id: 97d0c746-fe2a-41b7-82b2-9a448db24e75
+      name: internal_workflow_association_create
+  displayName: Workflow Association Management API
+  id: ec37eef7-68ca-4801-a21e-0ef46d93b32e
+  identifier: /api/server/v1/workflow-associations
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Flows Edit Feature
+      id: 02c37032-5b6a-42ef-acfd-058fa0d96125
+      name: console:flows_edit
+    - displayName: Flows View Feature
+      id: 56a3a053-f136-443f-8103-1beea14a4d70
+      name: console:flows_view
+    - displayName: Flows Feature
+      id: d74c8057-a418-42e4-90ee-1543a32a19a4
+      name: console:flows
+  displayName: Flows Feature
+  id: 250de909-1162-4a25-87fc-3bcaa2bae376
+  identifier: console:flows
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Webhooks
+      id: 04b8a4b2-a31b-4def-8ad9-b2f7c4efdb2b
+      name: internal_webhook_mgt_update
+    - displayName: View Webhooks
+      id: 2cb921e8-8e08-4642-9c2c-08d84c18ea76
+      name: internal_webhook_mgt_view
+    - displayName: Delete Webhooks
+      id: 49da2ab3-d92a-4884-b7c2-cbd02c8dd9de
+      name: internal_webhook_mgt_delete
+    - displayName: Create Webhooks
+      id: bc2fa54c-18c1-4230-9918-198b45603b54
+      name: internal_webhook_mgt_create
+  displayName: Webhook Management API
+  id: c04ea256-409f-42fd-aa89-72f74d55f684
+  identifier: /api/server/v1/webhooks
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Webhook Metadata
+      id: c161f142-ad8a-48a7-b9d6-3ae3a2becc20
+      name: internal_webhook_meta_view
+  displayName: Webhook Metadata API
+  id: 0fd94dfa-59eb-4f81-9370-3cd4daf3a86c
+  identifier: /api/server/v1/webhooks/metadata
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Login And Registration Edit Feature
+      id: 173e7260-94b5-4577-a85b-4206c6056258
+      name: console:org:loginAndRegistration_edit
+    - displayName: Login And Registration View Feature
+      id: 8806e960-eb2e-4aaf-ad69-f48034f575dd
+      name: console:org:loginAndRegistration_view
+    - displayName: Login And Registration Feature
+      id: cde34790-bb4a-419c-b296-ba3fa926c019
+      name: console:org:loginAndRegistration
+  displayName: Login And Registration Management Feature
+  id: d4c13c05-2ea6-44df-9ed7-33254e3aeb2e
+  identifier: console:org:loginAndRegistration
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Validation Rule
+      id: 35cf5359-b0ed-4239-b1ea-fdc7cf0186bd
+      name: internal_org_validation_rule_mgt_update
+  displayName: Validation Rules API
+  id: 69b6ff3b-636c-4711-b9de-7b25229187c1
+  identifier: /o/api/server/v1/validation-rules
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Workflow Approval Task
+      id: c51c41d2-2381-47a0-babb-d285ed04b076
+      name: internal_approval_task_view
+    - displayName: Update Workflow Approval Task
+      id: f4ebe10e-0abd-4e71-9b59-948e3891eb9a
+      name: internal_approval_task_update
+  displayName: Workflow Approval Task API
+  id: dd246f53-3572-4251-b0f8-47dbcd212ee3
+  identifier: /api/users/v2/me/approval-tasks
+  policyId: NO POLICY
+  type: TENANT
+- authorizedScopes:
+    - displayName: Approval Workflow View Feature
+      id: 115fc472-5840-41e3-a427-aaf8ef1b9180
+      name: console:org:approvalWorkflows_view
+    - displayName: Approval Workflow Feature
+      id: 703366c3-1162-4f46-8a75-8666803c49de
+      name: console:org:approvalWorkflows
+    - displayName: Approval Workflow Edit Feature
+      id: ce90b0eb-2523-4903-91c4-0290ed3e9fb6
+      name: console:org:approvalWorkflows_edit
+  displayName: Approval Workflow Management Feature Organization
+  id: d374c455-eddf-4f22-9add-9c18a66e2d05
+  identifier: console:org:approvalWorkflows
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: View Workflow
+      id: 0a907437-2c75-4ee3-8a39-448045499069
+      name: internal_org_workflow_view
+    - displayName: Update Workflow
+      id: 59ce7990-105c-437c-9068-90918112580f
+      name: internal_org_workflow_update
+    - displayName: Create Workflow
+      id: c044f49b-43ce-4930-9222-5fe1faa1bb4e
+      name: internal_org_workflow_create
+    - displayName: Delete Workflow
+      id: f466504b-956e-45d7-b391-a9bda4444ee5
+      name: internal_org_workflow_delete
+  displayName: Workflow Management API Organization
+  id: 79f1cd08-f6ba-4264-9569-51a722c489b8
+  identifier: /o/api/server/v1/workflows
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Role Assignments View Feature
+      id: 2d0f4acb-4e06-4ea0-96fc-1abeb0bd2129
+      name: console:role_assignments_view
+    - displayName: Role Assignments Feature
+      id: 4c02a6a7-8c83-403f-9183-f5d7d76559eb
+      name: console:role_assignments
+    - displayName: Role Assignments Edit Feature
+      id: 53a99b7c-9af8-4445-be56-964be7f763b1
+      name: console:role_assignments_edit
+  displayName: Role Assignments Feature
+  id: e7f7ae17-93c6-454f-90c6-d9db54eeb55b
+  identifier: console:role_assignments
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: User View Feature
+      id: 4ac5184c-a843-46f8-aeb4-4ea627b5cda5
+      name: console:agents_view
+    - displayName: User Feature
+      id: af1702f8-a328-4c33-aab1-16bb3c61ae7b
+      name: console:agents
+    - displayName: User Edit Feature
+      id: d1c6df88-b44a-4e21-83a9-7a2f7f202f2a
+      name: console:agents_edit
+  displayName: Agent Management Feature
+  id: f4346f9e-bb70-4119-b363-8fba16233c1b
+  identifier: console:agents
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Action
+      id: 7c6f1750-19c8-49d6-9614-9e187d48611e
+      name: internal_org_action_mgt_update
+    - displayName: Delete Action
+      id: 8c2a46ca-344e-4e3b-bcd7-47ab90145c62
+      name: internal_org_action_mgt_delete
+    - displayName: View Action
+      id: a23a5f20-e37c-4e93-99bd-e3fa2da5f70b
+      name: internal_org_action_mgt_view
+    - displayName: Create Action
+      id: a752e6a3-82da-4090-962f-a2ceaad95f61
+      name: internal_org_action_mgt_create
+  displayName: Action Management API
+  id: c714f0dc-96d1-47a8-bb31-819028949755
+  identifier: /o/api/server/v1/actions
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Manage Bulk Federated User Associations
+      id: 35e661e0-d9f0-452b-94f2-ac8ff1d56eef
+      name: internal_org_fed_user_association_bulk
+  displayName: Federated Association Management Bulk API
+  id: 5b8aea26-59c3-4937-80a2-7a003a355da1
+  identifier: /o/api/users/v1/federated-associations/bulk
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Workflow Instance Feature
+      id: 2e7a2ae1-9058-4a98-b703-4fc4e13361a4
+      name: console:org:workflowInstances
+    - displayName: Workflow Instance Edit Feature
+      id: 7bc5b476-f132-418e-9a80-b70fc75b04d5
+      name: console:org:workflowInstances_edit
+    - displayName: Workflow Instance View Feature
+      id: f44c0fb2-289b-490b-9ee2-fb420678f8c2
+      name: console:org:workflowInstances_view
+  displayName: Workflow Instance Management Feature
+  id: d7303588-4aa8-485d-acc1-a6aee4413dac
+  identifier: console:org:workflowInstances
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: View Agent
+      id: 14fd8a09-3949-4131-be25-ed704bb1976b
+      name: internal_agent_mgt_view
+    - displayName: List Agents
+      id: 62b126f2-bba2-40d5-8b29-698ae7e605a0
+      name: internal_agent_mgt_list
+    - displayName: Delete Agent
+      id: 865b8402-de10-42d2-94f9-e90b42ab5bb2
+      name: internal_agent_mgt_delete
+    - displayName: Create Agent
+      id: a57ca0d5-0da5-4368-b5ea-c8a56383c736
+      name: internal_agent_mgt_create
+    - displayName: Update Agent
+      id: ac534ef0-8a17-48bc-852b-89a3d4f724e4
+      name: internal_agent_mgt_update
+  displayName: SCIM2 Agents API
+  id: 538313d2-cf9f-41d1-a231-6c62f4aa82e5
+  identifier: /scim2/Agents
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Workflow Instance
+      id: e0e3c52c-64f0-4100-950b-b3c81ae27cd9
+      name: internal_org_workflow_instance_view
+    - displayName: Update Workflow Instance
+      id: E99EF61C-AA67-44BE-BCB0-363FA89813B3
+      name: internal_org_workflow_instance_update
+    - displayName: Delete Workflow Instance
+      id: f0424705-19ed-43f8-8721-6c34753ecdc0
+      name: internal_org_workflow_instance_delete
+  displayName: Workflow Instance Management API Organization
+  id: d29ffb30-522c-4a1a-941b-15ebe595f53d
+  identifier: /o/api/server/v1/workflow-instances
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Workflow Association
+      id: 18e3e5fd-524e-425b-883b-803316bad3a7
+      name: internal_org_workflow_association_update
+    - displayName: Delete Workflow Association
+      id: 2123fd60-f7aa-4e7e-9625-a319ef2357e6
+      name: internal_org_workflow_association_delete
+    - displayName: Create Workflow Association
+      id: 2d35acfb-0086-489a-a7ff-bd25c0453ad5
+      name: internal_org_workflow_association_create
+    - displayName: View Workflow Association
+      id: e8fd3291-fec6-463d-bdae-c82940ab6438
+      name: internal_org_workflow_association_view
+  displayName: Workflow Association Management API Organization
+  id: 8be66640-b8b0-481d-a6dd-879d1d4bd287
+  identifier: /o/api/server/v1/workflow-associations
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Manage Bulk Federated User Associations
+      id: f5ff90bd-f6bb-4306-9cbc-cb27041e05a1
+      name: internal_fed_user_association_bulk
+  displayName: Federated Association Management Bulk API
+  id: 1ae695ca-3bff-48da-8cca-6eb1fd74c9df
+  identifier: /api/users/v1/federated-associations/bulk
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Approval Workflow Edit Feature
+      id: 0cc02fce-4b44-4193-919f-291426d2a05f
+      name: console:approvalWorkflows_edit
+    - displayName: Approval Workflow Feature
+      id: 833a111b-3397-4c58-8a96-2e9f14a3f274
+      name: console:approvalWorkflows
+    - displayName: Approval Workflow View Feature
+      id: e7eeff90-efa4-4a4c-b2aa-817f0ac05d8e
+      name: console:approvalWorkflows_view
+  displayName: Approval Workflow Management Feature
+  id: d658b66b-b22e-4b1c-acea-793ca0c33b48
+  identifier: console:approvalWorkflows
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update User Code
+      id: 370e5bfb-b687-4a76-9318-ec89e50a8c1e
+      name: internal_org_user_code_mgt_update
+    - displayName: Create User Code
+      id: 4179aadb-60ca-424f-8a82-0e3cf05a004b
+      name: internal_org_user_code_mgt_create
+    - displayName: Delete User Code
+      id: 4bb4c7e0-3ca7-46bc-be40-af721f464bd4
+      name: internal_org_user_code_mgt_delete
+    - displayName: View User Code
+      id: b00f24ea-bbd9-43a7-b9cc-a30a9f971b09
+      name: internal_org_user_code_mgt_view
+  displayName: User Code Management API
+  id: d05f4272-7c06-4528-acd4-4f5be7758598
+  identifier: /o/api/identity/user/v1.0/(.*)-code
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Metadata
+      id: ad1617a1-20f2-4a9c-beb9-5a976a52c1db
+      name: internal_org_rule_metadata_view
+  displayName: Rule Metadata API
+  id: 855a8c54-74b3-4984-a106-6c0da3b6fcbb
+  identifier: /o/api/server/v1/rules/metadata
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: OIDC Scope View Feature
+      id: 19b5e2d1-b667-4bdb-8c74-e3313ea09687
+      name: console:org:scopes:oidc_view
+    - displayName: OIDC Scope Feature
+      id: 6a854954-85d8-4822-93fa-c1b6e11d95bb
+      name: console:org:scopes:oidc
+  displayName: OIDC Scope Management Feature
+  id: fd84c94f-8b5a-4a9e-879f-56ebba199329
+  identifier: console:org:scopes:oidc
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Workflow Approval Task
+      id: 608a61c2-6adc-43f7-b7d1-38d3fd699fea
+      name: internal_org_approval_task_update
+    - displayName: View Workflow Approval Task
+      id: d7ff143c-e69b-40d9-8039-9ed24c9f11cf
+      name: internal_org_approval_task_view
+  displayName: Workflow Approval Task API
+  id: 1c2f02fc-d042-4ce8-8c21-e93b1d65cc85
+  identifier: /o/api/users/v2/me/approval-tasks
+  policyId: NO POLICY
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Action Edit Feature
+      id: 3d07ad4b-24dd-405f-ad31-6996ac329231
+      name: console:org:actions_edit
+    - displayName: Action Feature
+      id: 50b7e398-a846-43ee-b817-259d152d8f73
+      name: console:org:actions
+    - displayName: Action View Feature
+      id: 70aa41bb-a640-43be-be62-e4d73e805fc1
+      name: console:org:actions_view
+  displayName: Action Management Feature
+  id: 03d41ed5-9867-49d4-8340-acfa6f76b992
+  identifier: console:org:actions
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Workflow Instance Feature
+      id: 4334fb49-7794-416f-9b3d-68c09f46171b
+      name: console:workflowInstances
+    - displayName: Workflow Instance View Feature
+      id: 9717ac6f-1341-4cd4-a53c-46b148fa6712
+      name: console:workflowInstances_view
+    - displayName: Workflow Instance Edit Feature
+      id: d1dd0c68-1c38-4311-81d9-99171cb263b2
+      name: console:workflowInstances_edit
+  displayName: Workflow Instance Management Feature
+  id: e6ba8056-de5c-4b64-a235-c7527500843b
+  identifier: console:workflowInstances
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Role Assignments Edit Feature
+      id: 9a887ab6-5321-4ad6-a65e-ae97d6a97535
+      name: console:org:role_assignments_edit
+    - displayName: Role Assignments Feature
+      id: c1e90f30-af03-481b-907b-01e2c8318ac3
+      name: console:org:role_assignments
+    - displayName: Role Assignments View Feature
+      id: cadeeefa-1847-43f1-bdea-6042b718de5e
+      name: console:org:role_assignments_view
+  displayName: Role Assignments Feature
+  id: d9405d96-18af-4dca-b54d-23846825401a
+  identifier: console:org:role_assignments
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Workflow Instance
+      id: 0897DFA8-69A1-4AD4-B181-44A87E0F78BF
+      name: internal_workflow_instance_update
+    - displayName: View Workflow Instance
+      id: 178d29d6-8cef-499a-b591-bc0c565897f0
+      name: internal_workflow_instance_view
+    - displayName: Delete Workflow Instance
+      id: 79c31f51-cdaf-42d2-9637-ef9db232fd5b
+      name: internal_workflow_instance_delete
+  displayName: Workflow Instance Management API
+  id: 1964d828-80bc-4749-9f07-5dfaf2718db7
+  identifier: /api/server/v1/workflow-instances
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Flow
+      id: 50186ce7-81fa-4457-855e-bb844d82dc6a
+      name: internal_org_flow_view
+    - displayName: Update Flow
+      id: f445efef-3fe3-4c87-a19b-66e250ea3aeb
+      name: internal_org_flow_update
+  displayName: Flow Management API
+  id: 313e63bd-3876-44e1-aa68-405881991666
+  identifier: /o/api/server/v1/flow
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Flows Edit Feature
+      id: 7375f367-9cee-4d33-a9a2-4ea84a59e492
+      name: console:org:flows_edit
+    - displayName: Flows Feature
+      id: 8a5ba93b-61cf-417a-b167-efa0deb2cc89
+      name: console:org:flows
+    - displayName: Flows View Feature
+      id: ff3ebefd-120e-4557-a20f-699126524445
+      name: console:org:flows_view
+  displayName: Flows Feature
+  id: 2a7fa266-ce52-441f-9362-ccc445751f09
+  identifier: console:org:flows
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Users of Role
+      id: 0510f239-9205-4257-912c-2046adaed3d3
+      name: internal_role_mgt_users_update
+    - displayName: Update Role Metadata
+      id: 806c6b3f-efee-4557-8d54-e506b728b23f
+      name: internal_role_mgt_meta_update
+    - displayName: View Role
+      id: a9ae9b1a-2271-4102-8f50-db1909987815
+      name: internal_role_mgt_view
+    - displayName: Update Groups of Role
+      id: e72a5c70-dcfd-4918-b986-ce7afc8c592d
+      name: internal_role_mgt_groups_update
+    - displayName: Create Role
+      id: eef8ee77-ca65-4ccc-8712-3132d4896744
+      name: internal_role_mgt_meta_create
+    - displayName: Delete Role
+      id: f404c71a-c6b9-44d0-9f17-831aa88265cb
+      name: internal_role_mgt_delete
+  displayName: SCIM2 Roles V3 API
+  id: 1a86ace7-f764-47bc-bfc5-9ae535fc95e3
+  identifier: /scim2/v3/Roles
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Role
+      id: 013d5516-1764-4c7c-bab5-bf596744a1af
+      name: internal_org_role_mgt_view
+    - displayName: Update Users of Role
+      id: 0d1b0a7c-36b9-48f2-869d-b90ba09cf6da
+      name: internal_org_role_mgt_users_update
+    - displayName: Update Role Metadata
+      id: 36c03b36-4b77-496a-b803-c538c01d1070
+      name: internal_org_role_mgt_meta_update
+    - displayName: Create Role
+      id: 4a02ffa6-3a20-4432-bc6a-f71eca3cdf0a
+      name: internal_org_role_mgt_meta_create
+    - displayName: Update Groups of Role
+      id: 5c868d46-d86c-4331-a937-d45855128069
+      name: internal_org_role_mgt_groups_update
+    - displayName: Delete Role
+      id: 9bf07b09-10ba-421f-ac0a-c9529bd8200b
+      name: internal_org_role_mgt_delete
+  displayName: SCIM2 Roles V3 API
+  id: 800cbd6a-6e90-449d-bd2e-b1cb4bfb077d
+  identifier: /o/scim2/v3/Roles
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Workflow Approval Task
+      id: 3e6f9061-b562-46d9-bf7e-aff523ad0b90
+      name: internal_approval_task_update
+    - displayName: View Workflow Approval Task
+      id: b0cdc6ef-acb7-4968-8857-195d01133efd
+      name: internal_approval_task_view
+  displayName: Workflow Approval Task API
+  id: 3d797291-3092-4690-9ef6-9ef6b5dbabb7
+  identifier: /api/users/v1/me/approval-tasks
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Workflow Approval Task
+      id: 556cca20-2ff6-41d8-8d70-ebaea466824f
+      name: internal_org_approval_task_update
+    - displayName: View Workflow Approval Task
+      id: 73580f69-1a8b-4751-970d-739df4d12029
+      name: internal_org_approval_task_view
+  displayName: Workflow Approval Task API
+  id: a5a29df6-2557-4c8d-97c3-76ddc888896c
+  identifier: /o/api/users/v1/me/approval-tasks
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Application Internal API Management Feature
+      id: 05afacff-31fc-4bc2-a30b-d1418500f71e
+      name: console:application_internal_api_management
+    - displayName: Application Internal API Management Edit Feature
+      id: 3f6fa981-7181-4d45-8d69-d2a9ae069120
+      name: console:application_internal_api_management_edit
+    - displayName: Application Internal API Management View Feature
+      id: e5d43747-138f-448c-b405-7122a11e6b1e
+      name: console:application_internal_api_management_view
+  displayName: Application Internal API management feature
+  id: 09ce88bc-11ca-4d62-8ca8-bfbf92ca88e6
+  identifier: console:application_internal_api_management
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Role Permission Assignments Edit Feature
+      id: 2db56c2b-cc4b-406e-8886-f4700a85b6a7
+      name: console:role_permission_assignments_edit
+    - displayName: Role Permission Assignments Feature
+      id: 634ac909-dee3-47f6-8470-25517a943aa2
+      name: console:role_permission_assignments
+    - displayName: Role Permission Assignments View Feature
+      id: fcf2999c-ff09-4e15-8903-c29083dcce24
+      name: console:role_permission_assignments_view
+  displayName: Role Permission Assignments Feature
+  id: 33c6971b-a506-4945-a9f5-60f7af6a7f21
+  identifier: console:role_permission_assignments
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Application Secret Management View Feature
+      id: 29593df8-eca4-4db6-9db8-dc755484065e
+      name: console:application_client_secrets_view
+    - displayName: Application Secret Management Feature
+      id: 582b28e4-d041-481d-aa82-feba41c0cc61
+      name: console:application_client_secrets
+    - displayName: Application Secret Management Edit Feature
+      id: ef5b08d7-0f1a-4d5a-b2c0-de8e68d6cf76
+      name: console:application_client_secrets_edit
+  displayName: Application client secret management feature
+  id: 5216ce1e-78cf-445a-86f7-47da6310ac43
+  identifier: console:application_client_secrets
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Application Secret Management Edit Feature
+      id: 2c2724c2-6477-49f5-8c4c-4ad53ee16adf
+      name: console:org:application_client_secrets_edit
+    - displayName: Application Secret Management View Feature
+      id: 90a2ebfe-649c-43d2-b6fa-24848f1d26e6
+      name: console:org:application_client_secrets_view
+    - displayName: Application Secret Management Feature
+      id: c2a22c10-3605-4052-aa3c-cfccf35502d1
+      name: console:org:application_client_secrets
+  displayName: Application client secret management feature
+  id: ed726e30-2158-4a7d-bfbd-2826c99b425f
+  identifier: console:org:application_client_secrets
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Application Authentication Script
+      id: a8cb7cb0-63c6-41bf-9244-c69a4bafa498
+      name: internal_application_script_update
+  displayName: Application Authentication Script Management API
+  id: 486f2c5a-4b0b-49d0-8d4a-91f365a51c8c
+  identifier: /api/server/v1/applications/(.*)/authenticationSequence/script
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Application Authentication Script Edit Feature
+      id: 795f22b2-d169-4988-b8af-e3bb67d0919d
+      name: console:org:applicationAuthenticationScript_edit
+    - displayName: Application Authentication Script View Feature
+      id: 8b544c38-b065-4982-b788-d00421d7011d
+      name: console:org:applicationAuthenticationScript_view
+    - displayName: Application Authentication Script Feature
+      id: ebf5d98e-88e9-4840-a2de-1b9f65e2574a
+      name: console:org:applicationAuthenticationScript
+  displayName: Application Authentication Script Management Feature
+  id: 418b72e5-fc06-480d-99c3-1a5c39d590b2
+  identifier: console:org:applicationAuthenticationScript
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Application Authentication Script Feature
+      id: 102fce60-11ea-4828-91d0-bf1b28453c84
+      name: console:applicationAuthenticationScript
+    - displayName: Application Authentication Script View Feature
+      id: 46029607-5253-4cc7-9dcd-69e87ed9c4aa
+      name: console:applicationAuthenticationScript_view
+    - displayName: Application Authentication Script Edit Feature
+      id: 76bc7a99-7768-476e-bb5a-0ba045244441
+      name: console:applicationAuthenticationScript_edit
+  displayName: Application Authentication Script Management Feature
+  id: b5954f19-b3b0-4781-a824-fe11766cab68
+  identifier: console:applicationAuthenticationScript
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update Application Authentication Script
+      id: 469b98cc-5ee8-4055-9f18-61bac04d4e10
+      name: internal_org_application_script_update
+  displayName: Application Authentication Script Management API
+  id: 5ead617c-7dd1-45f0-9108-99207dd280e3
+  identifier: /o/api/server/v1/applications/(.*)/authenticationSequence/script
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Role Permission Assignments Edit Feature
+      id: 1195be7f-9478-46d2-9750-0bedf4e716e9
+      name: console:org:role_permission_assignments_edit
+    - displayName: Role Permission Assignments Feature
+      id: 892e6913-c0b9-4d5a-b715-8f354b4113ad
+      name: console:org:role_permission_assignments
+    - displayName: Role Permission Assignments View Feature
+      id: eba40449-baed-4870-acef-130daabf5fa5
+      name: console:org:role_permission_assignments_view
+  displayName: Role Permission Assignments Feature
+  id: aefaf3e1-8e38-4c96-951b-6cef655d82fb
+  identifier: console:org:role_permission_assignments
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Application Internal API Management Edit Feature
+      id: 1aed4994-2a72-4005-9b88-4d751fa672e9
+      name: console:org:application_internal_api_management_edit
+    - displayName: Application Internal API Management View Feature
+      id: be43827d-0697-43c0-a08d-54af8cb96e1e
+      name: console:org:application_internal_api_management_view
+    - displayName: Application Internal API Management Feature
+      id: fc5ae041-8348-4bcc-84d4-6f772ebb160d
+      name: console:org:application_internal_api_management
+  displayName: Application Internal API management feature
+  id: e125bebf-4f5b-4e88-a23c-c6414daae2af
+  identifier: console:org:application_internal_api_management
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Delete Credential
+      id: 1ebb6530-7752-4075-84dd-940177cf3797
+      name: internal_org_user_mgt_delete
+    - displayName: View Credential
+      id: 7a4eeb53-eb88-42da-a37d-6b1de3323079
+      name: internal_org_user_mgt_view
+  displayName: User Credential Management API
+  id: 86adf2ef-b34a-4150-99f3-8c3880646111
+  identifier: /o/api/server/v1/users/(.*)/credentials
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Delete Credential
+      id: 97f64af6-b951-412c-accb-11620e546b1f
+      name: internal_user_mgt_delete
+    - displayName: View Credential
+      id: c445f88c-ee76-408a-809e-da12f2724048
+      name: internal_user_mgt_view
+  displayName: User Credential Management API
+  id: 2e663bbd-b5ea-4a21-88c3-e0e23200e334
+  identifier: /api/server/v1/users/(.*)/credentials
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Profile delete
+      id: 03e99346-986c-4730-b9a8-ec0345731e61
+      name: internal_cds_profile_delete
+    - displayName: Profile view
+      id: 3331b067-5422-4068-a730-7b30488c523c
+      name: internal_cds_profile_view
+    - displayName: Profile create
+      id: 5ceb4983-1de5-4414-9750-949ead16deb2
+      name: internal_cds_profile_create
+    - displayName: Profile update
+      id: acaccc2c-9303-4f4e-9f7c-343a60c5773a
+      name: internal_cds_profile_update
+  displayName: Customer Data Service profile management API
+  id: cc5433df-1a4b-45c0-9ddf-df09757eb288
+  identifier: /cds/api/v1/profiles
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Profile chema attribute delete
+      id: 0cb0f431-c072-4350-8e75-8eed8234ef11
+      name: internal_cds_profile_schema_delete
+    - displayName: Profile chema attribute view
+      id: 15a1520e-2539-4363-bb6e-13024bb36b42
+      name: internal_cds_profile_schema_view
+    - displayName: Profile schema attribute create
+      id: 754ea0b4-13f0-4655-9013-ebd2e26d0ab8
+      name: internal_cds_profile_schema_create
+    - displayName: Profile chema attribute update
+      id: da031dd7-9888-48de-9806-8b945906c068
+      name: internal_cds_profile_schema_update
+  displayName: Customer Data Service profile schema attribute management API
+  id: 142ac489-e177-4b2f-8448-408c1bd41153
+  identifier: /cds/api/v1/profile-schema
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Customer data service configuration view
+      id: 26769629-eb01-4fb1-8d27-5ab0edeaff84
+      name: internal_cds_admin_config_view
+    - displayName: Customer data service configuration update
+      id: 4f20c85d-dfc5-4d15-a5fe-edf041f0b2aa
+      name: internal_cds_admin_config_update
+  displayName: Customer Data Service config management API
+  id: d105860a-cd2e-47d9-b41b-5f82053cbf20
+  identifier: /cds/api/v1/config
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Profile unification rule view
+      id: 5c604645-41c2-4e9c-b072-27692cf2093e
+      name: internal_cds_unification_rule_view
+    - displayName: Profile unification rule create
+      id: a63e0fd8-431b-44c8-b99d-7f1d44f650d2
+      name: internal_cds_unification_rule_create
+    - displayName: Profile unification rule update
+      id: b8386fc0-8f16-4cb4-a773-71c88d96bea7
+      name: internal_cds_unification_rule_update
+    - displayName: Profile unification ruledelete
+      id: ea35a950-3c28-4318-b8d4-51e8662ceda6
+      name: internal_cds_unification_rule_delete
+  displayName: Customer Data Service profile unification rule management API
+  id: 2770bd93-1a9b-4835-8ed2-c0c8bdf85425
+  identifier: /cds/api/v1/unification-rules
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update User Password
+      id: 84d2913a-6703-4cb6-9152-52478a80653c
+      name: internal_org_user_password_update
+  displayName: User Password Update API
+  id: 77503ca0-96ea-4aa6-9138-abf2eb4af3ab
+  identifier: /o/api/users/v1/me/change-password
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Shared Users Attributes
+      id: 34d71127-3ce8-4776-af2b-0105d0d13761
+      name: internal_org_user_shared_access_update
+    - displayName: Unshare users
+      id: 3be74d35-f538-430b-bd99-e17c759af052
+      name: internal_org_user_unshare
+    - displayName: Share Users
+      id: 3f3129a7-cd2a-4cc4-88fd-3be495eed7eb
+      name: internal_org_user_share
+    - displayName: View Shared Users
+      id: f02d32aa-7fa2-466d-b4fe-52d827d6dfc5
+      name: internal_org_user_shared_access_view
+  displayName: User Sharing API V2
+  id: 8baffa2e-3f0e-4bea-899c-8f8aad23b86e
+  identifier: /o/api/server/v2/users
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update User Password
+      id: cda5e7b0-f7e9-4be8-93e1-4829234cd50c
+      name: internal_user_password_update
+  displayName: User Password Update API
+  id: 8df52df0-b078-4791-94c8-8c5bdc572c03
+  identifier: /api/users/v1/me/change-password
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: VC Templates Edit Feature
+      id: 4a7321ae-78bd-4d03-806a-f15fe459c34d
+      name: console:vc_templates_edit
+    - displayName: VC Template View Feature
+      id: a45d47cd-fb4e-45a7-94d6-5c06f9ea78cc
+      name: console:vc_templates_view
+    - displayName: VC Template Feature
+      id: e3481fe6-1049-450a-851f-ab8720e5c226
+      name: console:vc_templates
+  displayName: VC Templates Management Feature
+  id: 5b778338-f1d9-42ec-808f-f4b1c5abdd28
+  identifier: console:vc_templates
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Update VC Credential Configuration
+      id: 23083054-81e5-452e-a1ab-75bc3a07aefd
+      name: internal_vc_template_update
+    - displayName: Delete VC Credential Configuration
+      id: 290e820a-41b5-4193-b5b5-da8afc98a6b4
+      name: internal_vc_template_delete
+    - displayName: View VC Templates
+      id: 698b3849-0fa5-4087-8173-48a3b6338c7c
+      name: internal_vc_template_view
+    - displayName: Create VC Credential Configuration
+      id: a6f11002-5849-4848-b4c4-04f11c30cb93
+      name: internal_vc_template_create
+  displayName: VC Templates Management API
+  id: 2723ea71-a838-48a1-960d-c86ab6931dd5
+  identifier: /api/server/v1/vc-templates
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Unshare users
+      id: 1ef7ce02-8662-4399-b876-f5fdef75a0e9
+      name: internal_user_unshare
+    - displayName: View Shared Users
+      id: 33900a8f-00a1-46b8-bc50-4c98b0ca2f0c
+      name: internal_user_shared_access_view
+    - displayName: Update Shared Users Attributes
+      id: 594dead1-e27b-48a1-8acb-a255d07b2b67
+      name: internal_user_shared_access_update
+    - displayName: Share Users
+      id: d8418dfc-8e1b-4f71-925e-688f1c260904
+      name: internal_user_share
+  displayName: User Sharing API V2
+  id: 62ee3406-7ed3-4c6d-aa3d-99dec8073e68
+  identifier: /api/server/v2/users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Customer Data Service Feature
+      id: 036e2483-75f5-443f-90d4-b14ef8192c68
+      name: console:customerData
+    - displayName: Customer Data Service Edit Feature
+      id: b64693f8-4d2b-401c-ab3c-cfed287be4d1
+      name: console:customerData_edit
+    - displayName: Customer Data Service View Feature
+      id: e875b54e-006d-43e3-b333-8dda7c2e92a1
+      name: console:customerData_view
+  displayName: Customer Data Service Feature
+  id: cf2ca914-8276-4459-85f3-1eefcdfb38c7
+  identifier: console:customerData
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Resident Application Outbound Provisioning View Feature
+      id: 7a5ab915-a8d7-4582-a465-edce4cb9ebc2
+      name: console:org:residentOutboundProvisioning_view
+    - displayName: Resident Application Outbound Provisioning Feature
+      id: a6b3cb07-077f-4bf3-9d21-6368bd766d35
+      name: console:org:residentOutboundProvisioning
+    - displayName: Resident Application Outbound Provisioning Edit Feature
+      id: b63ea555-4271-4dbc-8a0e-84bb197a73fe
+      name: console:org:residentOutboundProvisioning_edit
+  displayName: Resident Application Outbound Provisioning Configuration Feature
+  id: 2023ac29-fb51-4750-8ecf-dc80e0f75dfe
+  identifier: console:org:residentOutboundProvisioning
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: User Sharing Management Edit Feature
+      id: 7af825ef-c6e1-478a-be29-ca80678c33c6
+      name: console:userSharing_edit
+    - displayName: User Sharing Management Feature
+      id: 9f10d6a4-34b9-4b11-b142-3316af3f4550
+      name: console:userSharing
+    - displayName: User Sharing Management View Feature
+      id: de054da3-5893-42de-b960-3c2d8d2c83f9
+      name: console:userSharing_view
+  displayName: User Sharing Management Feature
+  id: 0c923fb2-ed51-4835-9544-04413187bc87
+  identifier: console:userSharing
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: User Sharing Management Feature
+      id: 7aa2a4a7-5341-4300-aee2-b341ab09f063
+      name: console:org:userSharing
+    - displayName: User Sharing Management Edit Feature
+      id: d204d36c-83eb-4076-b1b5-7787c1bba0e2
+      name: console:org:userSharing_edit
+    - displayName: User Sharing Management View Feature
+      id: dc7f4a67-2497-441a-9187-5255ee6a1a64
+      name: console:org:userSharing_view
+  displayName: User Sharing Management Feature
+  id: 915c8d4f-911e-4ffa-8f43-c90d30ce2093
+  identifier: console:org:userSharing
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Update Shared Agents Attributes
+      id: 1b46d6d4-0a0e-4045-8189-08d965ce0858
+      name: internal_org_agent_shared_access_update
+    - displayName: View Shared Agents
+      id: 66aa61a1-e81c-4e49-998d-f0416d1cf0cc
+      name: internal_org_agent_shared_access_view
+    - displayName: Unshare Agents
+      id: 6e7caa56-2fda-4664-9b29-9a8568e783c2
+      name: internal_org_agent_unshare
+    - displayName: Share Agents
+      id: d41a99d0-9cb1-4049-bf5c-ec0b11d0300f
+      name: internal_org_agent_share
+  displayName: Agent Sharing API
+  id: 059057e2-da9d-4734-b4bb-f17b6ed7495a
+  identifier: /o/api/server/v1/agents
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update Moesif Configurations
+      id: acd0688d-f242-4ea5-9515-89c46359fc9b
+      name: internal_moesif_config_update
+    - displayName: View Moesif Configurations
+      id: df7fea36-8efa-4f83-8484-e8c8bef6b614
+      name: internal_moesif_config_view
+    - displayName: Delete Moesif Configurations
+      id: e48ee1e0-9e49-4911-bbaf-3195ef08f844
+      name: internal_moesif_config_delete
+    - displayName: Create Moesif Configurations
+      id: f44069f1-c59e-4361-b62d-2a52947d7fe0
+      name: internal_moesif_config_create
+  displayName: Moesif Configurations Management API
+  id: 44a048f5-a85a-4a53-99c2-f5e63623056b
+  identifier: /api/server/v1/moesif-publishers
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Shared Agents Attributes
+      id: a13b3b0c-5196-4673-a8c9-34dd1ed54f9e
+      name: internal_agent_shared_access_update
+    - displayName: Unshare Agents
+      id: de338caf-a290-4d87-aba6-82cb1713b4f2
+      name: internal_agent_unshare
+    - displayName: Share Agents
+      id: e42e977d-6867-48c3-bfd1-5afcb6535675
+      name: internal_agent_share
+    - displayName: View Shared Agents
+      id: f1455e4a-4138-49b8-ae6f-af754151c33f
+      name: internal_agent_shared_access_view
+  displayName: Agent Sharing API
+  id: 6076284b-0816-4748-a044-832daaf3b40f
+  identifier: /api/server/v1/agents
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Create Flow Extension
+      id: a46becde-c7bd-43c8-b342-6f20c564224f
+      name: internal_flow_extension_create
+    - displayName: Delete Flow Extension
+      id: b79fa94a-8391-4cfd-83b7-af8420ff5dee
+      name: internal_flow_extension_delete
+    - displayName: Update Flow Extension
+      id: c2fbaed6-de10-41a0-9d77-3e2c30cd00ce
+      name: internal_flow_extension_update
+    - displayName: View Flow Extension
+      id: eb17b63d-3b01-466e-bf95-b634fb20283d
+      name: internal_flow_extension_view
+  displayName: Flow Extension Management API
+  id: fe3fbb63-186f-40cd-8333-0fd69f050f2e
+  identifier: /api/server/v1/flow/extension
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Flow Extension
+      id: 44d84e47-f7df-4ab6-bdf1-614bcb6c115b
+      name: internal_org_flow_extension_update
+    - displayName: Create Flow Extension
+      id: 6e6ab5b8-5852-4ccc-94a4-5df34f98d974
+      name: internal_org_flow_extension_create
+    - displayName: Delete Flow Extension
+      id: b562fa9f-b22a-460f-a5a6-b76fef4d1f25
+      name: internal_org_flow_extension_delete
+    - displayName: View Flow Extension
+      id: f7911c11-02d1-4b24-9513-d8cc3da5b509
+      name: internal_org_flow_extension_view
+  displayName: Flow Extension Management API
+  id: 43448384-49ad-4595-8e10-5fb994f1e186
+  identifier: /o/api/server/v1/flow/extension
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Flow Extensions View Feature
+      id: 49d09ea1-0a75-492f-b588-369a4e7250bf
+      name: console:org:flowExtensions_view
+    - displayName: Flow Extensions Feature
+      id: 658d2b3b-cffc-477a-8746-d7c0a9d52d08
+      name: console:org:flowExtensions
+    - displayName: Flow Extensions Edit Feature
+      id: b655e29a-6942-44b4-9267-3b68dd2e6a9c
+      name: console:org:flowExtensions_edit
+  displayName: Flow Extensions Feature
+  id: 688cfedc-9606-4002-a655-0fac6fec967b
+  identifier: console:org:flowExtensions
+  policyId: RBAC
+  type: CONSOLE_ORG_FEATURE
+- authorizedScopes:
+    - displayName: Flow Extensions Edit Feature
+      id: 1d95d189-5657-41be-b7f5-cdeeeb0fdb09
+      name: console:flowExtensions_edit
+    - displayName: Flow Extensions Feature
+      id: 5e421ade-550c-4266-a214-629c0e7df345
+      name: console:flowExtensions
+    - displayName: Flow Extensions View Feature
+      id: c33dca92-836c-4d43-b970-13f0dd2544d5
+      name: console:flowExtensions_view
+  displayName: Flow Extensions Feature
+  id: c11583c2-5272-421d-87a5-4a8135a6591f
+  identifier: console:flowExtensions
+  policyId: RBAC
+  type: CONSOLE_FEATURE
+- authorizedScopes:
+    - displayName: Create Credential
+      id: 49a8379c-a2fe-45e6-aadb-c76dfc795f9c
+      name: internal_user_credential_mgt_create
+    - displayName: Delete Credential
+      id: 7e28dbcd-e546-495b-8b0b-df8f9cc8a9c8
+      name: internal_user_credential_mgt_delete
+    - displayName: View Credential
+      id: 9b69445a-8bb9-4fd7-80e2-beac9468f11c
+      name: internal_user_credential_mgt_view
+  displayName: User Credential Management API v2
+  id: 342f9d14-04cf-433f-9d0c-5d8ba47021dc
+  identifier: /api/users/v2/(.*)/credentials
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: View Credential
+      id: 4c8ddd8c-a236-433d-845c-aaf43a7e4265
+      name: internal_org_user_credential_mgt_view
+    - displayName: Create Credential
+      id: 99c2a70e-4252-48a3-8fd4-ae79b640e164
+      name: internal_org_user_credential_mgt_create
+    - displayName: Delete Credential
+      id: e83009e3-2512-4031-8a54-35dc0fb708d7
+      name: internal_org_user_credential_mgt_delete
+  displayName: User Credential Management API v2
+  id: 74132786-6f69-4e49-8f75-5db718d8727b
+  identifier: /o/api/users/v2/(.*)/credentials
+  policyId: RBAC
+  type: ORGANIZATION

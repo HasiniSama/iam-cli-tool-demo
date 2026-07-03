@@ -1,0 +1,60 @@
+- authorizedScopes:
+    - displayName: User Impersonation Scope
+      id: 9466e3b7-ff14-47c2-82f9-21f24ce98ed5
+      name: internal_user_impersonate
+  displayName: User Impersonation
+  id: b571dd60-00e6-4957-a799-7f2221e07022
+  identifier: system:impersonation
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: User Impersonation Scope for Organizations
+      id: 6238cf88-b3f5-4880-b9fb-361663e52d85
+      name: internal_org_user_impersonate
+  displayName: Organization User Impersonation
+  id: 1683481d-c53f-4ba8-a552-08ea5f2a99b5
+  identifier: org:impersonation
+  policyId: RBAC
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: View Workflow Approval Task
+      id: c51c41d2-2381-47a0-babb-d285ed04b076
+      name: internal_approval_task_view
+    - displayName: Update Workflow Approval Task
+      id: f4ebe10e-0abd-4e71-9b59-948e3891eb9a
+      name: internal_approval_task_update
+  displayName: Workflow Approval Task API
+  id: dd246f53-3572-4251-b0f8-47dbcd212ee3
+  identifier: /api/users/v2/me/approval-tasks
+  policyId: NO POLICY
+  type: TENANT
+- authorizedScopes:
+    - displayName: Update Workflow Approval Task
+      id: 608a61c2-6adc-43f7-b7d1-38d3fd699fea
+      name: internal_org_approval_task_update
+    - displayName: View Workflow Approval Task
+      id: d7ff143c-e69b-40d9-8039-9ed24c9f11cf
+      name: internal_org_approval_task_view
+  displayName: Workflow Approval Task API
+  id: 1c2f02fc-d042-4ce8-8c21-e93b1d65cc85
+  identifier: /o/api/users/v2/me/approval-tasks
+  policyId: NO POLICY
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update User Password
+      id: 84d2913a-6703-4cb6-9152-52478a80653c
+      name: internal_org_user_password_update
+  displayName: User Password Update API
+  id: 77503ca0-96ea-4aa6-9138-abf2eb4af3ab
+  identifier: /o/api/users/v1/me/change-password
+  policyId: NO POLICY
+  type: ORGANIZATION
+- authorizedScopes:
+    - displayName: Update User Password
+      id: cda5e7b0-f7e9-4be8-93e1-4829234cd50c
+      name: internal_user_password_update
+  displayName: User Password Update API
+  id: 8df52df0-b078-4791-94c8-8c5bdc572c03
+  identifier: /api/users/v1/me/change-password
+  policyId: NO POLICY
+  type: TENANT
