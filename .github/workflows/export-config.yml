@@ -36,8 +36,6 @@ jobs:
       #    folder lives and where the exported files will be diffed against.
       - name: Check out the dev branch
         uses: actions/checkout@v4
-        with:
-          ref: dev
 
       # 2. Download and unpack IAM-CTL (fresh on every run - runners
       #    start empty, and pinning the version keeps runs reproducible).
