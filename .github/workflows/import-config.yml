@@ -1,0 +1,57 @@
+# ── Import: prod branch → Identity Platform PROD org ──────────────────────────────
+# Fires automatically when a PR into the prod branch is merged.
+# Whatever YAML files are on the prod branch get applied to the prod org.
+# Git is the source of truth; the org is made to match it.
+
+name: Import to Prod
+
+on:
+  # Automatic trigger: a pull request targeting `prod` was closed.
+  # (We filter for "actually merged" below - closed ≠ merged!)
+  pull_request:
+    types: [closed]
+    branches: [prod]
+  # Manual trigger too, so you can re-apply the prod branch any time
+  # (e.g., someone changed the prod org by hand and you want to reset it).
+  workflow_dispatch:
+
+env:
+  IAMCTL_VERSION: v3.0.0
+  IAMCTL_ARCHIVE: iamctl-3.0.0-linux-x64.tar.gz
+  IAMCTL_DIR: iamctl-3.0.0
+
+  # Same bridge as before, but with the PROD org's credentials -
+  # these resolve the ${PROD_CLIENT_ID} / ${PROD_CLIENT_SECRET}
+  # placeholders in configs/prod/serverConfig.json.
+  PROD_CLIENT_ID: ${{ secrets.PROD_CLIENT_ID }}
+  PROD_CLIENT_SECRET: ${{ secrets.PROD_CLIENT_SECRET }}
+
+jobs:
+  import:
+    # A PR can be closed WITHOUT being merged. Only import if it was
+    # actually merged (or if a human triggered the run manually).
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Check out the prod branch explicitly. For pull_request events
+      #    the default checkout is a merge ref, so we pin to `prod` to be
+      #    sure we import exactly what the branch now contains.
+      - name: Check out the prod branch
+        uses: actions/checkout@v4
+
+      # 2. Download and unpack IAM-CTL.
+      - name: Download and extract IAM-CTL
+        run: |
+          curl -L -o "$IAMCTL_ARCHIVE" \
+            "https://github.com/wso2-extensions/identity-tools-cli/releases/download/${IAMCTL_VERSION}/${IAMCTL_ARCHIVE}"
+          tar -xzf "$IAMCTL_ARCHIVE"
+
+      # 3. The main event. importAll:
+      #      -c configs/prod → connect using the PROD org's serverConfig.json
+      #      -i .             → read the resource YAML files from the repo root
+      #    IAM-CTL compares each file against the prod org and creates or
+      #    updates resources to match. Already-matching resources are left
+      #    alone - safe to run repeatedly.
+      - name: Import all configurations into the prod org
+        run: |
+          ./${IAMCTL_DIR}/bin/iamctl importAll -c configs/prod -i .
