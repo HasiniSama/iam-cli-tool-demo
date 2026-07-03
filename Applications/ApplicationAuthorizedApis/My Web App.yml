@@ -1,0 +1,33 @@
+- authorizedScopes:
+    - displayName: Create User
+      id: 0eccfe41-099b-44b1-a939-5a31ffc73d41
+      name: internal_user_mgt_create
+    - displayName: List Users
+      id: 327af183-c37a-4aad-a455-22dccdaa720e
+      name: internal_user_mgt_list
+    - displayName: View User
+      id: 3a01b5b2-2990-4821-a5b5-c472b32e23eb
+      name: internal_user_mgt_view
+    - displayName: Delete User
+      id: 81d44d4f-ddb3-4e0a-a1aa-39164e6e572e
+      name: internal_user_mgt_delete
+    - displayName: Update User
+      id: 9708a661-313b-41af-918f-5c0992c5074d
+      name: internal_user_mgt_update
+  displayName: SCIM2 Users API
+  id: 1f616716-f518-48a5-a497-5eb0e2200b4f
+  identifier: /scim2/Users
+  policyId: RBAC
+  type: TENANT
+- authorizedScopes:
+    - displayName: Delete Credential
+      id: 97f64af6-b951-412c-accb-11620e546b1f
+      name: internal_user_mgt_delete
+    - displayName: View Credential
+      id: c445f88c-ee76-408a-809e-da12f2724048
+      name: internal_user_mgt_view
+  displayName: User Credential Management API
+  id: 2e663bbd-b5ea-4a21-88c3-e0e23200e334
+  identifier: /api/server/v1/users/(.*)/credentials
+  policyId: RBAC
+  type: TENANT
