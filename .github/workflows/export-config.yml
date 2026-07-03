@@ -1,0 +1,79 @@
+# ── Export: Identity Platform DEV org → dev branch ──────────────────────────────────
+# Run this whenever you've changed something in the dev org's console and
+# want to capture it in Git. It never writes to Identity Platform - export is
+# read-only against the org - and it never commits directly to the branch:
+# every export lands as a reviewable pull request.
+
+name: Export from Dev
+
+on:
+  # Manual trigger: run it from the Actions tab whenever you want
+  # to snapshot the dev org's current state.
+  workflow_dispatch:
+
+permissions:
+  contents: write        # to push the export branch
+  pull-requests: write   # to open the PR
+
+env:
+  IAMCTL_VERSION: v3.0.0
+  IAMCTL_ARCHIVE: iamctl-3.0.0-linux-x64.tar.gz
+  IAMCTL_DIR: iamctl-3.0.0
+
+  # ── The secret-to-placeholder bridge ──
+  # These lines take the encrypted GitHub secrets and expose them as
+  # environment variables INSIDE the runner. When IAM-CTL reads
+  # configs/dev/serverConfig.json and finds "${DEV_CLIENT_ID}", it
+  # resolves it from these variables. The values are masked in all logs.
+  DEV_CLIENT_ID: ${{ secrets.DEV_CLIENT_ID }}
+  DEV_CLIENT_SECRET: ${{ secrets.DEV_CLIENT_SECRET }}
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Check out the dev branch - this is both where the configs/dev
+      #    folder lives and where the exported files will be diffed against.
+      - name: Check out the dev branch
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      # 2. Download and unpack IAM-CTL (fresh on every run - runners
+      #    start empty, and pinning the version keeps runs reproducible).
+      - name: Download and extract IAM-CTL
+        run: |
+          curl -L -o "$IAMCTL_ARCHIVE" \
+            "https://github.com/wso2-extensions/identity-tools-cli/releases/download/${IAMCTL_VERSION}/${IAMCTL_ARCHIVE}"
+          tar -xzf "$IAMCTL_ARCHIVE"
+
+      # 3. The main event. exportAll:
+      #      -c configs/dev  → connect using the DEV org's serverConfig.json
+      #      -o .            → write the exported YAML files to the repo root
+      #    This creates/updates folders like Applications/, IdentityProviders/,
+      #    Claims/, UserStores/ - one YAML file per resource.
+      - name: Export all configurations from the dev org
+        run: |
+          ./${IAMCTL_DIR}/bin/iamctl exportAll -c configs/dev -o .
+
+      # 4. Remove the downloaded tool so it doesn't end up in the PR.
+      - name: Clean up the downloaded tool
+        run: rm -rf "$IAMCTL_ARCHIVE" "$IAMCTL_DIR"
+
+      # 5. Open a PR against dev with whatever changed. If nothing changed
+      #    in the org since the last export, no PR is created - the action
+      #    detects an empty diff and simply skips. This is what makes the
+      #    whole pipeline idempotent: running it twice does no harm.
+      - name: Open a pull request with the exported changes
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Export configurations from dev"
+          title: "Export configurations from dev"
+          body: |
+            Configuration snapshot exported from the Identity Platform dev organization.
+            Review the diff and merge if it looks right.
+          branch: export-from-dev
+          branch-suffix: timestamp   # unique branch per run, avoids collisions
+          delete-branch: true        # tidy up after the PR is merged/closed
+          base: ${{ github.ref_name }}
+          labels: export, automated-pr
